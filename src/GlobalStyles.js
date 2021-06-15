@@ -1,10 +1,11 @@
-import styled, { createGlobalStyle } from 'styled-components';
+import styled, { createGlobalStyle } from "styled-components";
 
-import ttf from './components/Assets/fonts/Poppins-Regular.ttf';
-import eot from './components/Assets/fonts/poppins-v15-latin-regular.eot';
-import svg from './components/Assets/fonts/poppins-v15-latin-regular.svg';
-import woff from './components/Assets/fonts/poppins-v15-latin-regular.woff';
-import woff2 from './components/Assets/fonts/poppins-v15-latin-regular.woff2';
+import ttf2 from "./components/Assets/fonts/Roboto.ttf";
+import ttf from "./components/Assets/fonts/Poppins-Regular.ttf";
+import eot from "./components/Assets/fonts/poppins-v15-latin-regular.eot";
+import svg from "./components/Assets/fonts/poppins-v15-latin-regular.svg";
+import woff from "./components/Assets/fonts/poppins-v15-latin-regular.woff";
+import woff2 from "./components/Assets/fonts/poppins-v15-latin-regular.woff2";
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -25,12 +26,13 @@ const GlobalStyle = createGlobalStyle`
   }
 
   @font-face {
+    font-family: 'Roboto';
+    src:url(${ttf2}) format('truetype');
+  }
+
+  @font-face {
     font-family: 'Poppins';
-    src:url(${ttf}) format('truetype'),
-        url(${eot}) format('embedded-opentype'),
-        url(${svg}) format('svg'),
-        url(${woff}) format('woff'),
-        url(${woff2}) format('woff2');
+    src:url(${ttf2}) format('truetype');
   }
 `;
 
@@ -51,7 +53,7 @@ export const Container = styled.div`
 
 export const Button = styled.a`
   border-radius: 50px;
-  background: #6358F8;
+  background: #6358f8;
   white-space: nowrap;
   padding: 14px 38px;
   color: #fff;
@@ -63,12 +65,12 @@ export const Button = styled.a`
   justify-content: center;
   align-items: center;
   transition: all 0.2s ease-in-out;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   letter-spacing: 5px;
 
   &:hover {
     transition: all 0.2s ease-in-out;
-    background: #0467FB;
+    background: #0467fb;
   }
 `;
 
