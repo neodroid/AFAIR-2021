@@ -7,7 +7,7 @@ import {
   Nav,
   NavContainer,
   Logo,
-  Icon,
+  TestDiv,
   MobileIcon,
   NavMenu,
   NavItem,
@@ -15,9 +15,9 @@ import {
   ButtonLink,
   Button,
   LinkScroll,
-} from "./NavbarElements";
+} from "./NavbarBawahElements";
 
-const Navbar = () => {
+const NavbarBawah = () => {
   const [toggle, setToggle] = useState(false);
   const [button, setButton] = useState(true);
 
@@ -57,32 +57,40 @@ const Navbar = () => {
       <Nav scrollNav={scrollNav}>
         <NavContainer>
           <Logo to="/" onClick={closeMenu}>
-            <LinkScroll to="/" smooth onClick={closeMenu}>
-              AFAIR 2022
-            </LinkScroll>
+            {/* <LinkScroll to="/" smooth onClick={closeMenu}></LinkScroll> */}
           </Logo>
           <MobileIcon onClick={handleToggle}>
             {toggle ? <FaTimes /> : <FaBars />}
           </MobileIcon>
           <NavMenu onClick={handleToggle} toggle={toggle}>
             <NavItem>
-              <LinkScroll to="/concept" smooth onClick={closeMenu}>
-                ABOUT
+              <LinkScroll to="/brief" smooth onClick={closeMenu}>
+                BRIEF
               </LinkScroll>
             </NavItem>
             <NavItem>
-              <LinkScroll to="/competition" smooth onClick={closeMenu}>
-                COMPETITION
+              <LinkScroll to="/brief" smooth onClick={closeMenu}>
+                PRIZES
               </LinkScroll>
             </NavItem>
             <NavItem>
-              <LinkScroll to="/event" smooth onClick={closeMenu}>
-                EVENT
+              <LinkScroll to="/brief" smooth onClick={closeMenu}>
+                DATES
+              </LinkScroll>
+            </NavItem>
+            <NavItem>
+              <LinkScroll to="/prizes" smooth onClick={closeMenu}>
+                JURY
+              </LinkScroll>
+            </NavItem>
+            <NavItem>
+              <LinkScroll to="/dates" smooth onClick={closeMenu}>
+                FEE
               </LinkScroll>
             </NavItem>
             <NavItem>
               <LinkScroll to="/contact" smooth onClick={closeMenu}>
-                CONTACT
+                FAQ
               </LinkScroll>
             </NavItem>
             {/* <NavButton>
@@ -113,4 +121,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default NavbarBawah;

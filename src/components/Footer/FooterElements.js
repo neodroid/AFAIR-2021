@@ -6,6 +6,10 @@ export const FooterSection = styled.footer`
   background: #a8d0da;
   position: relative;
   color: #2f3a56;
+  // position: fixed;
+  // left: 0;
+  bottom: 0;
+  z-index: 80;
 `;
 
 export const Container = styled.div`

@@ -99,10 +99,6 @@ export const ImageWrapper = styled.div`
   min-height: auto;
 `;
 
-export const ContentWrap = styled.div`
-  display: flex;
-`;
-
 export const Img = styled.img`
   padding-right: 0;
   border: 0;
@@ -137,14 +133,89 @@ export const LogoImg = styled.img`
   }
 `;
 
+export const Button1 = styled.button`
+  border-radius: 20px;
+  background: ${({ primary }) => (primary ? "#6358F8" : "#0467FB")};
+  white-space: nowrap;
+  padding: ${({ size }) => (size ? "12px 64px" : "10px 20px")};
+  color: #fff;
+  font-size: ${({ big }) => (big ? "20px" : "16px")};
+  outline: none;
+  border: none;
+  cursor: pointer;
+  // position: absolute;
+  width: 302px;
+  height: 46px;
+  left: 47px;
+  top: 615px;
+  margin-right: 20px;
+  background: #fe7235;
+  border-radius: 9px;
+  font-family: Roboto;
+
+  &:hover {
+    transition: all 0.2s ease-out;
+    background: #fff;
+    background: ${({ primary }) => (primary ? "#0467FB" : "#6358F8")};
+    color: #efb401;
+  }
+
+  @media screen and (max-width: 960px) {
+    width: 100%;
+  }
+`;
+
+export const Button2 = styled.button`
+  border-radius: 20px;
+  background: ${({ primary }) => (primary ? "#6358F8" : "#0467FB")};
+  white-space: nowrap;
+  padding: ${({ size }) => (size ? "12px 64px" : "10px 20px")};
+  color: #fff;
+  font-size: ${({ big }) => (big ? "20px" : "16px")};
+  outline: none;
+  border: none;
+  cursor: pointer;
+  width: 241px;
+  height: 46px;
+  left: 372px;
+  top: 615px;
+  width: 241px;
+  height: 46px;
+  left: 372px;
+  top: 615px;
+  font-family: Roboto;
+  background: #a8a8a8;
+  border-radius: 9px;
+
+  &:hover {
+    transition: all 0.2s ease-out;
+    background: #fff;
+    background: ${({ primary }) => (primary ? "#0467FB" : "#6358F8")};
+    color: #efb401;
+  }
+
+  @media screen and (max-width: 960px) {
+    width: 100%;
+  }
+`;
+
+export const ButtonWrap = styled.div`
+  display: flex;
+`;
+
 export const HomeImg = styled.img`
   // width: 1477px;
   top:0;
-  width: 881px;
+  height: 800px;
   z-index:100;
   position: relative;
-  margin-bottom: -95px;
+  margin-bottom: -125px;
+  margin-top: -100px;
   // @media screen and (max-width: 480px) {
     // max-width: 450px;
   }
+`;
+
+export const ContentWrap = styled.div`
+  display: flex;
 `;

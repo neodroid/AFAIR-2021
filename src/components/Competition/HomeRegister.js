@@ -7,14 +7,17 @@ import {
   TextWrapper,
   Line,
   Heading,
-  Paragraph,
   HomeImg,
   ContentWrap,
+  Img,
   LogoImg,
+  Button1,
+  Button2,
+  ButtonWrap,
 } from "./HeroElements";
 
-import { Container } from "../../../GlobalStyles";
-import img1 from "../../Assets/imgs/Home1.png";
+import { Container } from "../../GlobalStyles";
+import img1 from "../Assets/imgs/CompetitionImg.png";
 
 function Hero({ lineHeading, heading, description, img }) {
   return (
@@ -33,14 +36,19 @@ function Hero({ lineHeading, heading, description, img }) {
                     <Heading>{heading}</Heading>
                   </div>
                   <div>
-                    <Paragraph>{description}</Paragraph>
+                    <ButtonWrap>
+                      <Button1>REGISTER NOW!</Button1>
+                      <Button2>BRIEF</Button2>
+                    </ButtonWrap>
                   </div>
                 </TextWrapper>
               </Column>
               <Column>
+                {/* <Button1>REGISTER</Button1>
+                <Button2>Brief</Button2> */}
                 {/* <ImageWrapper>
-                <Img src={img} alt="home.png" />
-              </ImageWrapper> */}
+                  <Img src={img} alt="home.png" />
+                </ImageWrapper> */}
               </Column>
             </Row>
             <HomeImg src={img1} alt="home.png" />

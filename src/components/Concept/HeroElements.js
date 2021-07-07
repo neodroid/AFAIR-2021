@@ -15,7 +15,7 @@ export const Row = styled.div`
 `;
 
 export const Column = styled.div`
-  margin-bottom: 15px;
+  // margin-bottom: 15px;
   padding-right: 15px;
   padding-left: 15px;
   flex: 1;
@@ -41,31 +41,36 @@ export const TextWrapper = styled.div`
 `;
 
 export const Line = styled.div`
+  width: 517px;
+  // height: 117px;
+  left: 47px;
+  // top: 758px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 72px;
+  // line-height: 70px;
+  letter-spacing: -0.015em;
+
   color: #2f3a56;
-  font-size: 60px;
-  line-height: 70px;
-  letter-spacing: 3px;
-  font-weight: bold;
-  margin-bottom: 16px;
-  font-family: "Roboto";
   cursor: default;
 `;
 
 export const Heading = styled.h1`
-  font-family: Roboto;
-
-  width: 621px;
-  height: 118px;
+  width: 960px;
+  height: 84px;
   left: 47px;
-  top: 475px;
+  top: 832px;
 
+  font-family: Roboto;
   font-style: normal;
   font-weight: bold;
-  font-size: 80px;
-
+  font-size: 72px;
+  line-height: 84px;
   letter-spacing: -0.015em;
 
-  color: #e24748;
+  color: #2f3a56;
 `;
 
 export const Paragraph = styled.p`
@@ -97,10 +102,6 @@ export const ImageWrapper = styled.div`
   display: flex;
   justify-content: flex-end;
   min-height: auto;
-`;
-
-export const ContentWrap = styled.div`
-  display: flex;
 `;
 
 export const Img = styled.img`
@@ -137,13 +138,20 @@ export const LogoImg = styled.img`
   }
 `;
 
+export const DivLine = styled.div`
+  display: flex;
+  width: 100%;
+`;
+
 export const HomeImg = styled.img`
-  // width: 1477px;
-  top:0;
-  width: 881px;
-  z-index:100;
-  position: relative;
-  margin-bottom: -95px;
+  
+  display: inline-block;
+  height: 300px;   
+  margin-bottom: 150px;
+
+  align-self: flex-start;
+
+
   // @media screen and (max-width: 480px) {
     // max-width: 450px;
   }
