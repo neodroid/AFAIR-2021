@@ -56,3 +56,41 @@ export const FAQQuestion = styled.div`
 
   color: #2f3a56;
 `;
+
+export const FAQ1Img = styled.img`
+  // width: 1477px;
+  
+  height: 116px;
+  z-index:100;
+  position: relative;
+  right: 0;
+  
+  // @media screen and (max-width: 480px) {
+    // max-width: 450px;
+  }
+`;
+
+export const FAQWrapper = styled.div`
+  display: flex;
+
+  justify-content: space-between;
+`;
+
+export const FAQWrapper2 = styled.div`
+  display: flex;
+  margin-bottom: -90px;
+  justify-content: flex-end;
+`;
+
+export const FAQ2Img = styled.img`
+  // width: 1477px;
+  
+  height: 300px;
+  z-index:100;
+  position: relative;
+  right: 0;
+  
+  // @media screen and (max-width: 480px) {
+    // max-width: 450px;
+  }
+`;

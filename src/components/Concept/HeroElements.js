@@ -146,8 +146,22 @@ export const DivLine = styled.div`
 export const HomeImg = styled.img`
   
   display: inline-block;
-  height: 300px;   
-  margin-bottom: 150px;
+  height: 250px;   
+  margin-bottom: 100px;
+
+  align-self: flex-start;
+
+
+  // @media screen and (max-width: 480px) {
+    // max-width: 450px;
+  }
+`;
+
+export const RightImg = styled.img`
+  
+  display: inline-block;
+  height: 500px;   
+  margin-bottom: -400px;
 
   align-self: flex-start;
 

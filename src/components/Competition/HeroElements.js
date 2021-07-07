@@ -152,6 +152,13 @@ export const Button1 = styled.button`
   background: #fe7235;
   border-radius: 9px;
   font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  /* identical to box height */
+
+  letter-spacing: -0.015em;
 
   &:hover {
     transition: all 0.2s ease-out;

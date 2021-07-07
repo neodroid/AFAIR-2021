@@ -9,11 +9,12 @@ import {
   Heading,
   Paragraph,
   ImageWrapper,
-  DivLine,
+  RightImg,
   LogoImg,
 } from "./HeroElements";
 
 import { Container } from "../../GlobalStyles";
+import img3 from "../Assets/imgs/EventRight.png";
 
 function HeroConcept({ lineHeading, heading, description, img }) {
   return (
@@ -32,9 +33,9 @@ function HeroConcept({ lineHeading, heading, description, img }) {
               </TextWrapper>
             </Column>
             <Column>
-              {/* <ImageWrapper>
-                <Img src={img} alt="home.png" />
-              </ImageWrapper> */}
+              <ImageWrapper>
+                <RightImg src={img3} alt="home.png" />
+              </ImageWrapper>
             </Column>
           </Row>
 

@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "../navbar/Navbar";
 import Footer from "../Footer/Footer";
 import Hero from "../Event/HeroEvent";
-import Desc from "../Event/EventDesc";
+import Timeline from "../Event/Timeline";
 
 import { HeroData } from "../Landing/Data";
 
@@ -11,7 +11,7 @@ const Event = () => {
     <>
       <Navbar />
       <Hero {...HeroData} />
-      {/* <Desc /> */}
+      <Timeline />
       <Footer />
     </>
   );

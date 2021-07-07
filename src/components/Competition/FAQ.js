@@ -7,20 +7,25 @@ import {
   FAQText,
   Judul,
   FAQQuestion,
-  Paragraph,
-  ImageWrapper,
-  DivLine,
-  LogoImg,
+  FAQ1Img,
+  FAQWrapper,
+  FAQWrapper2,
+  FAQ2Img,
 } from "./FAQElements";
 
 import { Container } from "../../GlobalStyles";
+import imgRight from "../Assets/imgs/FAQ1.png";
+import imgBottom from "../Assets/imgs/FAQ2.png";
 
 function FAQ({ lineHeading, heading, description, img }) {
   return (
     <>
       <EventDescSection>
         <Container>
-          <Judul>FAQ</Judul>
+          <FAQWrapper>
+            <Judul>FAQ</Judul>
+            <FAQ1Img src={imgRight} alt="home.png" />
+          </FAQWrapper>
           <Row>
             <RowChild>
               <FAQQuestion>
@@ -97,6 +102,9 @@ function FAQ({ lineHeading, heading, description, img }) {
               </FAQText>
             </RowChild>
           </Row>
+          <FAQWrapper2>
+            <FAQ2Img src={imgBottom} alt="home.png" />
+          </FAQWrapper2>
         </Container>
       </EventDescSection>
     </>

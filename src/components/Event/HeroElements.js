@@ -8,7 +8,7 @@ export const HeroSection = styled.div`
 
 export const Row = styled.div`
   display: flex;
-  margin: 0 -15px -15px -15px;
+  margin: 200px -15px -15px -15px;
   flex-wrap: wrap;
   align-items: center;
   flex-direction: row;
@@ -32,7 +32,7 @@ export const Column = styled.div`
 
 export const TextWrapper = styled.div`
   max-width: 540px;
-  padding-top: 0;
+  margin-top: 100;
   padding-bottom: 60px;
 
   @media screen and (max-width: 768px) {
@@ -141,4 +141,20 @@ export const LogoImg = styled.img`
 export const DivLine = styled.div`
   display: flex;
   width: 100%;
+`;
+
+export const RightImg = styled.img`
+  
+  display: inline-block;
+  height: 600px;   
+  margin-top: -200px;
+  // padding-top: 400px;
+  margin-bottom: -150px;
+  position: relative;
+  align-self: flex-start;
+
+
+  // @media screen and (max-width: 480px) {
+    // max-width: 450px;
+  }
 `;
