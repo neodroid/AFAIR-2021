@@ -9,7 +9,7 @@ import {
   Heading,
   HomeImg,
   ContentWrap,
-  Img,
+  ButtonWrap1,
   LogoImg,
   Button1,
   Button2,
@@ -37,7 +37,15 @@ function Hero({ lineHeading, heading, description, img }) {
                   </div>
                   <div>
                     <ButtonWrap>
-                      <Button1>REGISTER NOW!</Button1>
+                      <ButtonWrap1 target="_blank" to="register" isExternal>
+                        <Button1
+                        // href="https://docs.google.com/forms/d/e/1FAIpQLSexJ21YDhMEDf1H9buh44lBqkof5CU759BIkhSYVevpe31TCw/viewform"
+                        // target="_blank"
+                        // rel="noopener noreferrer"
+                        >
+                          REGISTER NOW!
+                        </Button1>
+                      </ButtonWrap1>
                       <Button2>BRIEF</Button2>
                     </ButtonWrap>
                   </div>

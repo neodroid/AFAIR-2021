@@ -10,6 +10,10 @@ import Event from "./components/pages/Event";
 import Contact from "./components/pages/Contact";
 
 function App() {
+  const ExternalRedirect = ({ to, ...routeProps }) => {
+    return <Route {...routeProps} render={() => (window.location = to)} />;
+  };
+
   return (
     <Router>
       <ToTop>
@@ -20,6 +24,11 @@ function App() {
           <Route path="/competition" component={Competition} exact />
           <Route path="/event" component={Concept} exact />
           <Route path="/contact" component={Contact} exact />
+          <ExternalRedirect
+            path="/register"
+            to="https://docs.google.com/forms/d/e/1FAIpQLSexJ21YDhMEDf1H9buh44lBqkof5CU759BIkhSYVevpe31TCw/viewform"
+            exact
+          />
         </Switch>
         {/* <Footer /> */}
       </ToTop>

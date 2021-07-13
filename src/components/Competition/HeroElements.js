@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const HeroSection = styled.div`
   color: #fff;
@@ -134,9 +135,10 @@ export const LogoImg = styled.img`
 `;
 
 export const Button1 = styled.button`
-  border-radius: 20px;
-  background: ${({ primary }) => (primary ? "#6358F8" : "#0467FB")};
-  white-space: nowrap;
+  text-decoration: none;
+  // border-radius: 20px;
+  // background: ${({ primary }) => (primary ? "#6358F8" : "#0467FB")};
+  // white-space: nowrap;
   padding: ${({ size }) => (size ? "12px 64px" : "10px 20px")};
   color: #fff;
   outline: none;
@@ -158,6 +160,8 @@ export const Button1 = styled.button`
   /* identical to box height */
 
   letter-spacing: -0.015em;
+  text-align: center;
+  text-justify: center;
 
   &:hover {
     transition: all 0.2s ease-out;
@@ -167,6 +171,14 @@ export const Button1 = styled.button`
   @media screen and (max-width: 960px) {
     width: 100%;
   }
+`;
+
+export const ButtonWrap1 = styled(Link)`
+  justify-self: flex-start;
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
 `;
 
 export const Button2 = styled.button`
