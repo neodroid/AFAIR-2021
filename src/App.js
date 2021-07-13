@@ -7,6 +7,7 @@ import Landing from "./components/pages/Landing";
 import Concept from "./components/pages/Concept";
 import Competition from "./components/pages/Competition";
 import Event from "./components/pages/Event";
+import Contact from "./components/pages/Contact";
 
 function App() {
   return (
@@ -15,9 +16,10 @@ function App() {
       <GlobalStyle />
       <Switch>
         <Route path="/" component={Landing} exact />
-        <Route path="/concept" component={Concept} exact />
+        <Route path="/concept" component={Event} exact />
         <Route path="/competition" component={Competition} exact />
-        <Route path="/event" component={Event} exact />
+        <Route path="/event" component={Concept} exact />
+        <Route path="/contact" component={Contact} exact />
       </Switch>
       {/* <Footer /> */}
       {/* </ToTop> */}

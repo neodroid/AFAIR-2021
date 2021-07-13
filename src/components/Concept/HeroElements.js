@@ -41,28 +41,17 @@ export const TextWrapper = styled.div`
 `;
 
 export const Line = styled.div`
-  width: 517px;
-  // height: 117px;
-  left: 47px;
-  // top: 758px;
-
   font-family: Roboto;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 300;
   font-size: 72px;
-  // line-height: 70px;
+  line-height: 84px;
   letter-spacing: -0.015em;
 
   color: #2f3a56;
-  cursor: default;
 `;
 
 export const Heading = styled.h1`
-  width: 960px;
-  height: 84px;
-  left: 47px;
-  top: 832px;
-
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -71,6 +60,7 @@ export const Heading = styled.h1`
   letter-spacing: -0.015em;
 
   color: #2f3a56;
+  margin-right: 20px;
 `;
 
 export const Paragraph = styled.p`
@@ -140,7 +130,6 @@ export const LogoImg = styled.img`
 
 export const DivLine = styled.div`
   display: flex;
-  width: 100%;
 `;
 
 export const HomeImg = styled.img`
@@ -148,7 +137,7 @@ export const HomeImg = styled.img`
   display: inline-block;
   height: 250px;   
   margin-bottom: 100px;
-
+  margin-left: -150px;
   align-self: flex-start;
 
 
@@ -162,7 +151,7 @@ export const RightImg = styled.img`
   display: inline-block;
   height: 500px;   
   margin-bottom: -400px;
-
+  margin-right: -100px;
   align-self: flex-start;
 
 

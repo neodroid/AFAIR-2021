@@ -11,11 +11,9 @@ export const Row = styled.div`
   flex-direction: column;
 `;
 
-export const RowChild = styled.div`
+export const DescWrap = styled.div`
   display: flex;
-  width: 100%;
-  // margin-bottom: 30px;
-  justify-content: space-between;
+  align-items: center;
 `;
 
 export const Judul = styled.div`
@@ -26,7 +24,7 @@ export const Judul = styled.div`
 
 export const DescText = styled.div`
   width: 858px;
-
+  height: auto;
   font-family: Roboto;
   font-style: normal;
   font-weight: 300;
@@ -35,6 +33,8 @@ export const DescText = styled.div`
   text-align: justify;
   letter-spacing: -0.015em;
   color: #000000;
+
+  align-items: center;
 `;
 
 export const DescTitle = styled.div`
@@ -54,13 +54,23 @@ export const LogoImg = styled.img`
   display: inline-block;
 //   height: 112px;   
 
-  align-self: flex-start;
+//   align-self: flex-start;
 
   // @media screen and (max-width: 480px) {
     // max-width: 450px;
   }
 `;
 
+export const LogoImg2 = styled.img`
+  width: 1100px;
+  
+  display: inline-block;
+  margin-left: -100px;
+
+  // @media screen and (max-width: 480px) {
+    // max-width: 450px;
+  }
+`;
 export const HomeImg = styled.img`
   // width: 1477px;
   
@@ -74,8 +84,12 @@ export const HomeImg = styled.img`
   }
 `;
 
-export const ContentWrap = styled.div`
+export const Wrapper = styled.div`
   display: flex;
+  align-item: center;
+  // height: 500px;
+  background: #f7f2ec;
+  width: 100%;
 `;
 
 export const Container = styled.div`
@@ -84,11 +98,21 @@ export const Container = styled.div`
   max-width: 1300px;
   margin-left: auto;
   margin-right: auto;
-  padding-right: 50px;
-  padding-left: 50px;
 
   @media screen and (max-width: 991px) {
     padding-right: 30px;
     padding-left: 30px;
+  }
+`;
+
+export const Full = styled.div`
+  z-index: 1;
+  width: 100%;
+
+  background: #f7f2ec;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (max-width: 991px) {
   }
 `;

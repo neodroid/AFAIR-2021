@@ -7,14 +7,17 @@ import {
   TextWrapper,
   Line,
   Heading,
-  Paragraph,
+  HomeImg,
   ImageWrapper,
-  RightImg,
+  DivLine,
   LogoImg,
+  RightImg,
 } from "./HeroElements";
 
 import { Container } from "../../GlobalStyles";
-import img3 from "../Assets/imgs/EventRight.png";
+
+import img2 from "../Assets/imgs/Contact/PartnerAtasKiri.png";
+import img3 from "../Assets/imgs/Contact/PartnerAtasKanan.png";
 
 function HeroConcept({ lineHeading, heading, description, img }) {
   return (
@@ -24,9 +27,12 @@ function HeroConcept({ lineHeading, heading, description, img }) {
           <Row>
             <Column>
               <TextWrapper>
+                <div>
+                  <HomeImg src={img2} alt="home.png" />
+                </div>
                 <LogoImg src={img} alt="home.png" />
                 <div>
-                  <Line>AFAIR 2022</Line>
+                  <Line>PARTNERSHIP</Line>
                 </div>
 
                 <div>{/* <Paragraph>{description}</Paragraph> */}</div>
@@ -38,19 +44,13 @@ function HeroConcept({ lineHeading, heading, description, img }) {
               </ImageWrapper>
             </Column>
           </Row>
-
-          <Heading>INTO THE WAYOUT FUTURE</Heading>
-          <TextWrapper>
-            <div>
-              <Paragraph>
-                In the future, life will change. Starting from the needs,
-                lifestyle, and so on. Some needs will require spatial attention.
-                Therefore, we want to explore how Architecture can fulfill these
-                needs as an instrument in dealing with these changes in the
-                future.
-              </Paragraph>
-            </div>
-          </TextWrapper>
+          <DivLine>
+            <Heading>
+              We are open to anyone who is willing to support us especially as a
+              sponsor or as media partner to further expand our vision to bigger
+              markets. For inquiries, feel free to contact us through:
+            </Heading>
+          </DivLine>
         </Container>
       </HeroSection>
     </>

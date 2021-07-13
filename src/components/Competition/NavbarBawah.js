@@ -69,27 +69,27 @@ const NavbarBawah = () => {
               </LinkScroll>
             </NavItem>
             <NavItem>
-              <LinkScroll to="/brief" smooth onClick={closeMenu}>
+              <LinkScroll to="/prizes" smooth onClick={closeMenu}>
                 PRIZES
               </LinkScroll>
             </NavItem>
             <NavItem>
-              <LinkScroll to="/brief" smooth onClick={closeMenu}>
+              <LinkScroll to="/dates" smooth onClick={closeMenu}>
                 DATES
               </LinkScroll>
             </NavItem>
             <NavItem>
-              <LinkScroll to="/prizes" smooth onClick={closeMenu}>
+              <LinkScroll to="/jury" smooth onClick={closeMenu}>
                 JURY
               </LinkScroll>
             </NavItem>
             <NavItem>
-              <LinkScroll to="/dates" smooth onClick={closeMenu}>
+              <LinkScroll to="/fee" smooth onClick={closeMenu}>
                 FEE
               </LinkScroll>
             </NavItem>
             <NavItem>
-              <LinkScroll to="/contact" smooth onClick={closeMenu}>
+              <LinkScroll to="/fee" smooth onClick={closeMenu}>
                 FAQ
               </LinkScroll>
             </NavItem>

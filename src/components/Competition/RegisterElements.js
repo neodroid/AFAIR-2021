@@ -4,6 +4,9 @@ export const RegisterSection = styled.div`
   color: #fff;
   padding: 60px 0;
   background: #f7f2ec;
+  position: sticky;
+  bottom: 10;
+  z-index: 500;
 `;
 
 export const Button1 = styled.button`

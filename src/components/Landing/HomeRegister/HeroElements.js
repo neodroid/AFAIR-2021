@@ -41,55 +41,56 @@ export const TextWrapper = styled.div`
 `;
 
 export const Line = styled.div`
+  width: 517px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -0.015em;
+
   color: #2f3a56;
-  font-size: 60px;
-  line-height: 70px;
-  letter-spacing: 3px;
-  font-weight: bold;
-  margin-bottom: 16px;
-  font-family: "Roboto";
-  cursor: default;
 `;
 
 export const Heading = styled.h1`
-  font-family: Roboto;
-
   width: 621px;
-  height: 118px;
-  left: 47px;
-  top: 475px;
 
+  font-family: Roboto;
   font-style: normal;
   font-weight: bold;
-  font-size: 80px;
-
+  font-size: 64px;
+  line-height: 75px;
   letter-spacing: -0.015em;
 
   color: #e24748;
 `;
 
 export const Paragraph = styled.p`
-  max-width: 440px;
-  margin-bottom: 35px;
-  font-size: 18px;
-  margin-top: 35px;
-  line-height: 24px;
-  color: #a9b3c1;
+  width: 545px;
+  margin-top: 30px;
   font-family: Roboto;
-  cursor: default;
-
-  width: 547px;
-  height: 133px;
-  left: 47px;
-  top: 575px;
-
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
   line-height: 16px;
+  text-align: justify;
   letter-spacing: -0.015em;
 
   color: #000000;
+`;
+
+export const Heading2 = styled.p`
+  width: 539px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -0.015em;
+
+  color: #e24748;
 `;
 
 export const ImageWrapper = styled.div`
@@ -139,11 +140,11 @@ export const LogoImg = styled.img`
 
 export const HomeImg = styled.img`
   // width: 1477px;
-  top:0;
-  width: 881px;
-  z-index:100;
+  margin-top:-200px;
+  width: 1050px;
+  // z-index:100;
   position: relative;
-  margin-bottom: -95px;
+  margin-bottom: -63px;
   // @media screen and (max-width: 480px) {
     // max-width: 450px;
   }

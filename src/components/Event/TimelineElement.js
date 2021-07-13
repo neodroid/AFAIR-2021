@@ -8,7 +8,7 @@ export const EventDescSection = styled.div`
 
 export const LogoImg = styled.img`
   // width: 1477px;
-  top:0;
+  margin-top:40px;
   width: 80%;
   height: auto;
   z-index:100;
@@ -48,6 +48,18 @@ export const IMGWrap = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: -90px;
-  margin-top: -100px;
+  // margin-bottom: -90px;
+  // margin-top: -100px;
+`;
+
+export const Line = styled.div`
+  width: 339px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 33px;
+  letter-spacing: -0.015em;
+
+  color: #2f3a56;
 `;

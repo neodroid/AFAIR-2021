@@ -29,76 +29,67 @@ function FAQ({ lineHeading, heading, description, img }) {
           <Row>
             <RowChild>
               <FAQQuestion>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit?
+                Is the competition available for oversea students?
               </FAQQuestion>
               <FAQText>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Definitely! Our competition can be participated by architecture
+                students all over the world.
+              </FAQText>
+            </RowChild>
+            <RowChild>
+              <FAQQuestion>Will there be a presentation session?</FAQQuestion>
+              <FAQText>
+                There will be a presentation session for the 5 finalists of the
+                competition.
+              </FAQText>
+            </RowChild>
+            <RowChild>
+              <FAQQuestion>What is the language used for our work?</FAQQuestion>
+              <FAQText>
+                Please kindly use english as the language for your contents.
               </FAQText>
             </RowChild>
             <RowChild>
               <FAQQuestion>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit?
+                Can we submit a work from another competition?
               </FAQQuestion>
               <FAQText>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </FAQText>
-            </RowChild>
-            <RowChild>
-              <FAQQuestion>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit?
-              </FAQQuestion>
-              <FAQText>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </FAQText>
-            </RowChild>
-            <RowChild>
-              <FAQQuestion>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit?
-              </FAQQuestion>
-              <FAQText>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                No, you are not allowed to submit an already published work.
               </FAQText>
             </RowChild>
           </Row>
           <Row>
             <RowChild>
               <FAQQuestion>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit?
+                Can I participate with my friends from other major?
               </FAQQuestion>
               <FAQText>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Yes you can. It is not a problem as long as one of the member of
+                the group is studying in architecture major.
+              </FAQText>
+            </RowChild>
+            <RowChild>
+              <FAQQuestion>When will the winner be announced?</FAQQuestion>
+              <FAQText>
+                The winner of the competition will be announce during our main
+                event on January 2022.
+              </FAQText>
+            </RowChild>
+            <RowChild>
+              <FAQQuestion>What if we submit our work late?</FAQQuestion>
+              <FAQText>
+                There will be a penalty for those who are late for the
+                submission. Their points will be reduced depending on how late
+                their submission is.
               </FAQText>
             </RowChild>
             <RowChild>
               <FAQQuestion>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit?
+                Is there any other requirements for the site?
               </FAQQuestion>
               <FAQText>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </FAQText>
-            </RowChild>
-            <RowChild>
-              <FAQQuestion>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit?
-              </FAQQuestion>
-              <FAQText>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </FAQText>
-            </RowChild>
-            <RowChild>
-              <FAQQuestion>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit?
-              </FAQQuestion>
-              <FAQText>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Nope! Feel free to explore the possibilities from the brief we
+                have provided!
               </FAQText>
             </RowChild>
           </Row>

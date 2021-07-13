@@ -24,9 +24,9 @@ function RegisterButton({ lineHeading, heading, description, img }) {
     <>
       <RegisterSection id="/home">
         <Container>
-          <ContentWrap>
+          {/* <ContentWrap>
             <HomeImg src={imgRight} alt="home.png" />
-          </ContentWrap>
+          </ContentWrap> */}
 
           <ButtonWrap>
             <Button1>REGISTER NOW</Button1>

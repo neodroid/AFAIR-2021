@@ -139,12 +139,11 @@ export const Button1 = styled.button`
   white-space: nowrap;
   padding: ${({ size }) => (size ? "12px 64px" : "10px 20px")};
   color: #fff;
-  font-size: ${({ big }) => (big ? "20px" : "16px")};
   outline: none;
   border: none;
   cursor: pointer;
   // position: absolute;
-  width: 302px;
+  min-width: 302px;
   height: 46px;
   left: 47px;
   top: 615px;
@@ -162,9 +161,7 @@ export const Button1 = styled.button`
 
   &:hover {
     transition: all 0.2s ease-out;
-    background: #fff;
-    background: ${({ primary }) => (primary ? "#0467FB" : "#6358F8")};
-    color: #efb401;
+    background: #a8a8a8;
   }
 
   @media screen and (max-width: 960px) {
@@ -186,7 +183,7 @@ export const Button2 = styled.button`
   height: 46px;
   left: 372px;
   top: 615px;
-  width: 241px;
+  min-width: 241px;
   height: 46px;
   left: 372px;
   top: 615px;
@@ -208,6 +205,8 @@ export const Button2 = styled.button`
 
 export const ButtonWrap = styled.div`
   display: flex;
+  position: sticky;
+  top: 100;
 `;
 
 export const HomeImg = styled.img`

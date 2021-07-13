@@ -51,6 +51,7 @@ export const FAQQuestion = styled.div`
   font-size: 18px;
   line-height: 21px;
   letter-spacing: -0.015em;
+  margin-bottom: 20px;
 
   width: 241px;
 

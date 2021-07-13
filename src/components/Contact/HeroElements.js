@@ -8,10 +8,11 @@ export const HeroSection = styled.div`
 
 export const Row = styled.div`
   display: flex;
-  margin: 200px -15px -15px -15px;
+  margin: 0 -15px -15px -15px;
   flex-wrap: wrap;
   align-items: center;
   flex-direction: row;
+  padding-top: 100px;
 `;
 
 export const Column = styled.div`
@@ -32,7 +33,7 @@ export const Column = styled.div`
 
 export const TextWrapper = styled.div`
   max-width: 540px;
-  margin-top: 100;
+  padding-top: 0;
   padding-bottom: 60px;
 
   @media screen and (max-width: 768px) {
@@ -42,45 +43,55 @@ export const TextWrapper = styled.div`
 
 export const Line = styled.div`
   width: 517px;
-  // height: 117px;
-  left: 47px;
-  // top: 758px;
 
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 72px;
-  // line-height: 70px;
-  letter-spacing: -0.015em;
-
-  color: #2f3a56;
-  cursor: default;
-`;
-
-export const Heading = styled.h1`
-  width: 673px;
-
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 80px;
-  line-height: 94px;
+  font-size: 60px;
+  line-height: 70px;
   letter-spacing: -0.015em;
 
   color: #2f3a56;
 `;
 
-export const Paragraph = styled.div`
-  margin-top: 20px;
-  width: 479px;
+export const Heading = styled.p`
+  width: 547px;
+  height: 133px;
+  left: 47px;
+  top: 857px;
 
   font-family: Roboto;
   font-style: normal;
   font-weight: 300;
-  font-size: 16px;
-  line-height: 19px;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: -0.015em;
 
-  color: #2f3a56;
+  color: #000000;
+`;
+
+export const Paragraph = styled.p`
+  max-width: 440px;
+  margin-bottom: 35px;
+  font-size: 18px;
+  margin-top: 35px;
+  line-height: 24px;
+  color: #a9b3c1;
+  font-family: Roboto;
+  cursor: default;
+
+  width: 547px;
+  height: 133px;
+  left: 47px;
+  top: 575px;
+
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: -0.015em;
+
+  color: #000000;
 `;
 
 export const ImageWrapper = styled.div`
@@ -129,14 +140,28 @@ export const DivLine = styled.div`
   width: 100%;
 `;
 
+export const HomeImg = styled.img`
+  
+  display: inline-block;
+  height: 340px;   
+  margin-left: 150px;
+
+  align-self: flex-start;
+
+
+  // @media screen and (max-width: 480px) {
+    // max-width: 450px;
+  }
+`;
+
 export const RightImg = styled.img`
   
   display: inline-block;
-  height: 600px;   
+  height: 1000px;   
+  margin-bottom: -400px;
   margin-top: -200px;
-  // padding-top: 400px;
-  margin-bottom: -150px;
-  position: relative;
+  // margin-left: 90px;
+
   align-self: flex-start;
 
 

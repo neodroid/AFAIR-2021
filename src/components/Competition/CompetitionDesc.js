@@ -9,7 +9,7 @@ import {
   Judul,
   HomeImg,
   ContentWrap,
-  DivLine,
+  Container,
   LogoImg,
 } from "./CompetitionDescElements";
 
@@ -20,107 +20,41 @@ import img4 from "../Assets/imgs/CompetitionsDesc/mascots-3.png";
 import img5 from "../Assets/imgs/CompetitionsDesc/mascots-4.png";
 import imgRight from "../Assets/imgs/RegisterNow.png";
 
-import { Container } from "../../GlobalStyles";
+import Brief from "./Desc/Brief";
+import Prizes from "./Desc/Prizes";
+import Dates from "./Desc/Dates";
+import Jury from "./Desc/Jury";
+import Fee from "./Desc/Fee";
 
-function CompetitionDesc({ lineHeading, heading, description, img }) {
+const CompetitionDesc = ({ lineHeading, heading, description, img }) => {
   return (
     <>
-      <DescSection>
-        <Container>
-          <ContentWrap>
-            <Row>
-              <RowChild id="/brief">
-                <Judul>
-                  <LogoImg src={img1} alt="home.png" />
-                  <DescTitle>BRIEF</DescTitle>
-                </Judul>
-
-                <DescText>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt
-                  mollit anim id est laborum.
-                </DescText>
-              </RowChild>
-              <RowChild id="/prizes">
-                <Judul>
-                  <LogoImg src={img2} alt="home.png" />
-                  <DescTitle>PRIZES</DescTitle>
-                </Judul>
-
-                <DescText>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt
-                  mollit anim id est laborum.
-                </DescText>
-              </RowChild>
-              <RowChild id="/dates">
-                <Judul>
-                  <LogoImg src={img3} alt="home.png" />
-                  <DescTitle>DATES</DescTitle>
-                </Judul>
-
-                <DescText>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt
-                  mollit anim id est laborum.
-                </DescText>
-              </RowChild>
-              <RowChild id="/jury">
-                <Judul>
-                  <LogoImg src={img4} alt="home.png" />
-                  <DescTitle>JURY</DescTitle>
-                </Judul>
-
-                <DescText>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt
-                  mollit anim id est laborum.
-                </DescText>
-              </RowChild>
-              <RowChild id="/fee">
-                <Judul>
-                  <LogoImg src={img5} alt="home.png" />
-                  <DescTitle>FEE</DescTitle>
-                </Judul>
-
-                <DescText>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt
-                  mollit anim id est laborum.
-                </DescText>
-              </RowChild>
-            </Row>
-            {/* <HomeImg src={imgRight} alt="home.png" /> */}
-          </ContentWrap>
-        </Container>
-      </DescSection>
+      {/* <DescSection>
+        <Container> */}
+      {/* <ContentWrap> */}
+      <Row>
+        <RowChild id="/brief">
+          <Brief />
+        </RowChild>
+        <RowChild id="/prizes">
+          <Prizes />
+        </RowChild>
+        <RowChild id="/dates">
+          <Dates />
+        </RowChild>
+        <RowChild id="/jury">
+          <Jury />
+        </RowChild>
+        <RowChild id="/fee">
+          <Fee />
+        </RowChild>
+      </Row>
+      {/* <HomeImg src={imgRight} alt="home.png" /> */}
+      {/* </ContentWrap> */}
+      {/* </Container>
+      </DescSection> */}
     </>
   );
-}
+};
 
 export default CompetitionDesc;

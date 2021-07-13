@@ -16,8 +16,8 @@ import {
 
 import { Container } from "../../GlobalStyles";
 
-import img2 from "../Assets/imgs/ConceptHome.png";
-import img3 from "../Assets/imgs/ConceptRight.png";
+import img2 from "../Assets/imgs/New/NewEventLeft.png";
+import img3 from "../Assets/imgs/New/NewEventRIght.png";
 
 function HeroConcept({ lineHeading, heading, description, img }) {
   return (
@@ -31,9 +31,7 @@ function HeroConcept({ lineHeading, heading, description, img }) {
                   <HomeImg src={img2} alt="home.png" />
                 </div>
                 <LogoImg src={img} alt="home.png" />
-                <div>
-                  <Line>Coming Soon :</Line>
-                </div>
+                <div></div>
 
                 <div>{/* <Paragraph>{description}</Paragraph> */}</div>
               </TextWrapper>
@@ -45,8 +43,8 @@ function HeroConcept({ lineHeading, heading, description, img }) {
             </Column>
           </Row>
           <DivLine>
-            <Heading>WEBINAR / WORKSHOP </Heading>
-            <Line>AFAIR</Line>
+            <Heading>A-TALK </Heading>
+            <Line>WEBINAR SERIES</Line>
           </DivLine>
         </Container>
       </HeroSection>

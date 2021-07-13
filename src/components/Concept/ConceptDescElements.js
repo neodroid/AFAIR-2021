@@ -8,14 +8,13 @@ export const EventDescSection = styled.div`
 
 export const Row = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 `;
 
 export const RowChild = styled.div`
   display: flex;
-  width: 547px;
-  margin-left: 10px;
-  margin-right: 10px;
+  flex-direction: column;
+  width: 375px;
 `;
 
 export const DescText = styled.div`
@@ -35,8 +34,61 @@ export const LogoImg = styled.img`
   width: 100%;
   z-index:100;
   position: relative;
-  margin-bottom: -187px;
+  margin-bottom: -100px;
+  margin-left: -100px;
   // @media screen and (max-width: 480px) {
     // max-width: 450px;
   }
+`;
+
+export const TitleWrap = styled.div`
+  // display: flex;
+  // flex-direction: column;
+  height: 150px;
+`;
+export const TimeLine = styled.div`
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: justify;
+  letter-spacing: -0.015em;
+
+  color: #2f3a56;
+`;
+export const Title = styled.p`
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 49px;
+  // text-align: justify;
+  letter-spacing: -0.015em;
+
+  color: #2f3a56;
+`;
+export const Desc = styled.div`
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: justify;
+  letter-spacing: -0.015em;
+
+  color: #2f3a56;
+`;
+export const MoreInfo = styled.div`
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: justify;
+  letter-spacing: -0.015em;
+
+  color: #2f3a56;
+
+  margin-top: 100px;
 `;
