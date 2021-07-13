@@ -12,6 +12,7 @@ export const Nav = styled.nav`
   justify-content: center;
   z-index: 999;
   position: sticky;
+  position: -webkit-sticky; /* Safari */
   background-color: ${({ scrollNav }) => (scrollNav ? "#fff" : "transparent")};
   background-color: #a8d0da;
   font-size: 1.2rem;
