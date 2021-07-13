@@ -13,7 +13,7 @@ export const Nav = styled.nav`
   z-index: 999;
   position: sticky;
   background-color: ${({ scrollNav }) => (scrollNav ? "#fff" : "transparent")};
-  background-color: #A8D0DA;
+  background-color: #a8d0da;
   font-size: 1.2rem;
   top: 0;
   align-items: center;
@@ -83,7 +83,7 @@ export const NavItem = styled.li`
   border-bottom: 2px solid transparent;
 
   &:hover {
-    border-bottom: 2px solid #6358f8;
+    border-bottom: 5px solid #2f3a56;
   }
 
   @media screen and (max-width: 960px) {
@@ -115,7 +115,7 @@ export const Links = styled(Link)`
   }
 
   &:hover {
-    color: #efb401;
+    color: #f7f2ec;
     transition: 0.3s ease-in-out;
   }
 `;
@@ -128,7 +128,7 @@ export const LinkScroll = styled(Link)`
   height: 100%;
   font-family: "Poppins";
   font-weight: bold;
-  color: #2F3A56;
+  color: #2f3a56;
   cursor: pointer;
 
   @media screen and (max-width: 960px) {
@@ -140,7 +140,7 @@ export const LinkScroll = styled(Link)`
   }
 
   &:hover {
-    color: #fff;
+    color: #f7f2ec;
     transition: 0.3s ease-in-out;
   }
 `;
@@ -160,7 +160,7 @@ export const Button = styled.button`
     transition: all 0.2s ease-out;
     background: #fff;
     background: ${({ primary }) => (primary ? "#0467FB" : "#6358F8")};
-    color: #efb401;
+    color: #2f3a56;
   }
 
   @media screen and (max-width: 960px) {

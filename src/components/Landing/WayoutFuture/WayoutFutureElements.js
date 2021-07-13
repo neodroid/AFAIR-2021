@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const HeroSection = styled.div`
   color: #fff;
   padding: 60px 0;
-  background: #f7f2ec;
+  background: #2f3a56;
   height: 850px;
 `;
 
@@ -42,29 +42,27 @@ export const TextWrapper = styled.div`
 `;
 
 export const Line = styled.div`
-  width: 517px;
-
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 48px;
-  line-height: 56px;
+  font-size: 60px;
+  line-height: 70px;
   letter-spacing: -0.015em;
 
-  color: #2f3a56;
+  color: #f7f2ec;
 `;
 
 export const Heading = styled.h1`
-  width: 621px;
+  width: 673px;
 
   font-family: Roboto;
   font-style: normal;
-  font-weight: bold;
-  font-size: 64px;
-  line-height: 75px;
+  font-weight: 500;
+  font-size: 80px;
+  line-height: 94px;
   letter-spacing: -0.015em;
 
-  color: #e24748;
+  color: #f7f2ec; ;
 `;
 
 export const Paragraph = styled.p`
@@ -141,8 +139,8 @@ export const LogoImg = styled.img`
 
 export const HomeImg = styled.img`
   // width: 1477px;
-  margin-top:-220px;
-  width: 1050px;
+  margin-left:-300px;
+  width: 1100px;
   // z-index:100;
   position: relative;
   margin-bottom: -63px;

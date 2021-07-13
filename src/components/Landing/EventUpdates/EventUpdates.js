@@ -7,19 +7,17 @@ import {
   TextWrapper,
   Line,
   Heading,
+  Paragraph,
   HomeImg,
   ContentWrap,
-  Img,
   LogoImg,
-  Button1,
-  Button2,
-  ButtonWrap,
+  Heading2,
 } from "./HeroElements";
 
-import { Container } from "../../GlobalStyles";
-import img1 from "../Assets/imgs/CompetitionImg.png";
+import { Container } from "../../../GlobalStyles";
+import img1 from "../../Assets/imgs/Home2.png";
 
-function Hero({ lineHeading, heading, description, img }) {
+const EventUpdates = ({ lineHeading, heading, description, img }) => {
   return (
     <>
       <HeroSection id="/home">
@@ -30,18 +28,17 @@ function Hero({ lineHeading, heading, description, img }) {
                 <TextWrapper>
                   <LogoImg src={img} alt="home.png" />
                   <div>
-                    <Line>{lineHeading}</Line>
+                    <Line>EVENT</Line>
                   </div>
                   <div>
-                    <Heading>{heading}</Heading>
-                  </div>
-                  <div>
-                    <ButtonWrap>
-                      <Button1>REGISTER NOW!</Button1>
-                      <Button2>BRIEF</Button2>
-                    </ButtonWrap>
+                    <Heading>UPDATES</Heading>
                   </div>
                 </TextWrapper>
+              </Column>
+              <Column>
+                {/* <ImageWrapper>
+                <Img src={img} alt="home.png" />
+              </ImageWrapper> */}
               </Column>
             </Row>
             <HomeImg src={img1} alt="home.png" />
@@ -50,6 +47,6 @@ function Hero({ lineHeading, heading, description, img }) {
       </HeroSection>
     </>
   );
-}
+};
 
-export default Hero;
+export default EventUpdates;

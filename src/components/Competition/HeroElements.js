@@ -161,7 +161,7 @@ export const Button1 = styled.button`
 
   &:hover {
     transition: all 0.2s ease-out;
-    background: #a8a8a8;
+    background: #2f3a56;
   }
 
   @media screen and (max-width: 960px) {
@@ -193,9 +193,7 @@ export const Button2 = styled.button`
 
   &:hover {
     transition: all 0.2s ease-out;
-    background: #fff;
-    background: ${({ primary }) => (primary ? "#0467FB" : "#6358F8")};
-    color: #efb401;
+    background: #2f3a56;
   }
 
   @media screen and (max-width: 960px) {
@@ -205,8 +203,9 @@ export const Button2 = styled.button`
 
 export const ButtonWrap = styled.div`
   display: flex;
-  position: sticky;
-  top: 100;
+  // position: fixed;
+  bottom: 0;
+  z-index: 200;
 `;
 
 export const HomeImg = styled.img`
