@@ -6,10 +6,21 @@ import {
   FooterSection,
   Container,
   FooterText,
-  Linksoc,
+  SideWrap,
+  Socmed,
+  LogoSocmed,
+  NamaSocmed,
   FooterDiv,
   FooterChildDiv,
+  FooterTextBold,
 } from "./FooterElements";
+
+import Insta from "../Assets/imgs/Socmed/Insta.png";
+import Facebook from "../Assets/imgs/Socmed/Facebook.png";
+import Line from "../Assets/imgs/Socmed/Line.png";
+import Linkedin from "../Assets/imgs/Socmed/Linkedin.png";
+import Tiktok from "../Assets/imgs/Socmed/Tiktok.png";
+import Twitter from "../Assets/imgs/Socmed/Twitter.png";
 
 const Footer = () => {
   return (
@@ -19,14 +30,14 @@ const Footer = () => {
           <Container>
             <FooterDiv>
               <FooterChildDiv>
-                <FooterText>CONTACT PERSON</FooterText>
+                <FooterTextBold>CONTACT PERSON</FooterTextBold>
 
                 <FooterText>humasafair2022@gmail.com</FooterText>
                 <FooterText>Nadya Fatin (+6281380057919)</FooterText>
                 <FooterText>Gita Advenia (+628569409735)</FooterText>
               </FooterChildDiv>
               <FooterChildDiv>
-                <FooterText>MEDIA PARTNER</FooterText>
+                <FooterTextBold>MEDIA PARTNER</FooterTextBold>
 
                 <FooterText></FooterText>
                 <FooterText>Diana Tri M (+6281297889246)</FooterText>
@@ -35,23 +46,36 @@ const Footer = () => {
             </FooterDiv>
             <FooterDiv>
               <FooterChildDiv>
-                <FooterText>CONNECT WITH US!</FooterText>
+                <FooterTextBold>CONNECT WITH US!</FooterTextBold>
                 <FooterDiv>
-                  <FooterChildDiv>
-                    {/* <Linksoc
-                      href="https://www.instagram.com/afairui/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <FaInstagram />
-                      @afairui
-                    </Linksoc>
-                    <FooterText>Amira Salsabila (+62811189819)</FooterText>
-                  </FooterChildDiv>
-                  <FooterChildDiv>
-                    <FooterText>Diana Tri M (+6281297889246)</FooterText>
-                    <FooterText>Amira Salsabila (+62811189819)</FooterText> */}
-                  </FooterChildDiv>
+                  <SideWrap>
+                    <Socmed>
+                      <LogoSocmed src={Insta} />
+                      <NamaSocmed>@afairui</NamaSocmed>
+                    </Socmed>
+                    <Socmed>
+                      <LogoSocmed src={Twitter} />
+                      <NamaSocmed>@afairui</NamaSocmed>
+                    </Socmed>
+                    <Socmed>
+                      <LogoSocmed src={Line} />
+                      <NamaSocmed>bit.ly/afair2022</NamaSocmed>
+                    </Socmed>
+                  </SideWrap>
+                  <SideWrap>
+                    <Socmed>
+                      <LogoSocmed src={Facebook} />
+                      <NamaSocmed>facebook.com/afairui</NamaSocmed>
+                    </Socmed>
+                    <Socmed>
+                      <LogoSocmed src={Tiktok} />
+                      <NamaSocmed>Afairui</NamaSocmed>
+                    </Socmed>
+                    <Socmed>
+                      <LogoSocmed src={Linkedin} />
+                      <NamaSocmed>AFAIR UI 2022</NamaSocmed>
+                    </Socmed>
+                  </SideWrap>
                 </FooterDiv>
               </FooterChildDiv>
             </FooterDiv>
@@ -63,17 +87,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
-{
-  /* <FooterIcons>
-                        <a href='https://www.linkedin.com/company/newtab-id/' target="_blank" rel="noopener noreferrer">
-                            <FaLinkedin />
-                        </a>
-                        <a href='https://api.whatsapp.com/send/?phone=6281395098451&text=Halo%21+nama+saya+...&app_absent=0' target="_blank" rel="noopener noreferrer">
-                            <FaWhatsapp />
-                        </a>
-                        <a href='https://www.instagram.com/newtab.id/' target="_blank" rel="noopener noreferrer">
-                            <FaInstagram />
-                        </a>
-                    </FooterIcons> */
-}

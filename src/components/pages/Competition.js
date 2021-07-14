@@ -1,5 +1,4 @@
 import React from "react";
-import Navbar from "../navbar/Navbar";
 import Footer from "../Footer/Footer";
 import Hero from "../Competition/HomeRegister";
 import NavbarBawah from "../Competition/NavbarBawah";
@@ -12,7 +11,6 @@ import { HeroData } from "../Landing/Data";
 const Competition = () => {
   return (
     <>
-      <Navbar />
       <Hero {...HeroData} />
       <NavbarBawah />
       <Desc />

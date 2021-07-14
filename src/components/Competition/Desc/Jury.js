@@ -14,7 +14,7 @@ import {
 } from "./JuryElement";
 
 import img1 from "../../Assets/imgs/CompetitionsDesc/mascots-2.png";
-import img2 from "../../Assets/imgs/Jury.png";
+import img2 from "../../Assets/imgs/Judges.png";
 
 const Jury = ({ lineHeading, heading, description, img }) => {
   return (

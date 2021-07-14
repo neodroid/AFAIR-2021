@@ -10,7 +10,6 @@ import { HeroData } from "../Landing/Data";
 const Event = () => {
   return (
     <>
-      <Navbar />
       <Hero {...HeroData} />
       <Desc />
       <Timeline />

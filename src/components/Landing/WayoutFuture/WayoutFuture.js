@@ -43,10 +43,6 @@ const EventUpdates = ({ lineHeading, heading, description, img }) => {
           <ContentWrap>
             <Row>
               <Column>
-                {/* <LogoImg src={img} alt="home.png" />
-                  <div>
-                    <Line>EVENT</Line>
-                  </div> */}
                 <div>
                   <Heading>INTO THE WAYOUT FUTURE</Heading>
                 </div>
@@ -74,7 +70,6 @@ const EventUpdates = ({ lineHeading, heading, description, img }) => {
                 />
               </Column>
             </Row>
-            {/* <HomeImg src={img1} alt="home.png" /> */}
           </ContentWrap>
         </Container>
       </HeroSection>

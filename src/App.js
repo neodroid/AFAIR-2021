@@ -9,6 +9,8 @@ import Competition from "./components/pages/Competition";
 import Event from "./components/pages/Event";
 import Contact from "./components/pages/Contact";
 
+import Navbar from "./components/navbar/Navbar";
+
 function App() {
   const ExternalRedirect = ({ to, ...routeProps }) => {
     return <Route {...routeProps} render={() => (window.location = to)} />;
@@ -18,6 +20,7 @@ function App() {
     <Router>
       <ToTop>
         <GlobalStyle />
+        <Navbar />
         <Switch>
           <Route path="/" component={Landing} exact />
           <Route path="/concept" component={Event} exact />

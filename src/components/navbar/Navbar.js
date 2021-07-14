@@ -11,11 +11,9 @@ import {
   MobileIcon,
   NavMenu,
   NavItem,
-  NavButton,
-  ButtonLink,
-  Button,
   LinkScroll,
 } from "./NavbarElements";
+import LogoOnly from "../Assets/imgs/LogoOnly.png";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
@@ -58,7 +56,7 @@ const Navbar = () => {
         <NavContainer>
           <Logo to="/" onClick={closeMenu}>
             <LinkScroll to="/" smooth onClick={closeMenu}>
-              AFAIR 2022
+              <Icon src={LogoOnly} />
             </LinkScroll>
           </Logo>
           <MobileIcon onClick={handleToggle}>

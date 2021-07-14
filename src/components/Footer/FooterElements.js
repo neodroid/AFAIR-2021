@@ -96,3 +96,37 @@ export const Linksoc = styled.a`
   font-style: normal;
   font-color: #2f3a56;
 `;
+
+export const SideWrap = styled.div`
+  margin-left: 20px;
+`;
+export const Socmed = styled.div`
+  display: flex;
+  height: 35px;
+  align-items: center;
+`;
+export const LogoSocmed = styled.img`
+  width: 35px;
+`;
+export const NamaSocmed = styled.div`
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: -0.015em;
+
+  color: #2f3a56;
+`;
+
+export const FooterTextBold = styled.div`
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: -0.015em;
+  margin-left: 30px;
+  margin-bottom: 10px;
+  color: #2f3a56;
+`;

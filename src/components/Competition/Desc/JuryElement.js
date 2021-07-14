@@ -62,7 +62,8 @@ export const LogoImg = styled.img`
 `;
 
 export const LogoImg2 = styled.img`
-  Height: 100%;
+  Height: 600px;
+  margin-top:100px;
   // right: 0;
   // @media screen and (max-width: 480px) {
     // max-width: 450px;
@@ -84,7 +85,7 @@ export const HomeImg = styled.img`
 export const Wrapper = styled.div`
   display: flex;
   align-item: center;
-  height: 400px;
+  height: 700px;
   background: #a8d0da;
   width: 100%;
   justify-content: space-between;

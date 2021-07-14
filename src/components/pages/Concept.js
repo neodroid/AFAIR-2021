@@ -9,7 +9,6 @@ import { HeroData } from "../Landing/Data";
 const Concept = () => {
   return (
     <>
-      <Navbar />
       <Hero {...HeroData} />
       <Desc />
       <Footer />

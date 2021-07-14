@@ -9,7 +9,6 @@ import { HeroData } from "../Landing/Data";
 const Contact = () => {
   return (
     <>
-      <Navbar />
       <Hero {...HeroData} />
       <Desc />
       <Footer />
