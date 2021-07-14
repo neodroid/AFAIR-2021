@@ -1,6 +1,9 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
-export const HeroSection = styled.div`
+export const HeroSection = styled(Link)`
+  text-decoration: none;
+  display: flex;
   color: #fff;
   // padding: 60px 0;
   background: #fe7235;
@@ -25,6 +28,7 @@ export const Column = styled.div`
   flex: 1;
   max-width: 50%;
   flex-basis: 50%;
+  // background: #000;
 
   @media screen and (max-width: 768px) {
     max-width: 100%;

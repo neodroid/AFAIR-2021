@@ -24,7 +24,7 @@ const calc = (x, y) => [x - window.innerWidth / 2, y - window.innerHeight / 2];
 const trans1 = (x, y) => `translate3d(${x / 10}px,${y / 10}px,0)`;
 const trans2 = (x, y) => `translate3d(${x / 8 + 35}px,${y / 8 + 100}px,0)`;
 const trans3 = (x, y) => `translate3d(${x / 6 - 250}px,${y / 6 - 200}px,0)`;
-const trans4 = (x, y) => `translate3d(${x / 3.5}px,${y / 3.5}px,0)`;
+const trans4 = (x, y) => `translate3d(${x / 3.5 + 200}px,${y / 3.5 - 500}px,0)`;
 const trans5 = (x, y) => `translate3d(${x / 14 + 100}px,${y / 14 - 200}px,0)`;
 
 const EventUpdates = ({ lineHeading, heading, description, img }) => {
@@ -35,6 +35,7 @@ const EventUpdates = ({ lineHeading, heading, description, img }) => {
   return (
     <>
       <HeroSection
+        to="/concept"
         id="/home"
         onMouseMove={({ clientX: x, clientY: y }) => set({ xy: calc(x, y) })}
       >
@@ -42,23 +43,38 @@ const EventUpdates = ({ lineHeading, heading, description, img }) => {
           <ContentWrap>
             <Row>
               <Column>
-                <TextWrapper>
-                  {/* <LogoImg src={img} alt="home.png" />
+                {/* <LogoImg src={img} alt="home.png" />
                   <div>
                     <Line>EVENT</Line>
                   </div> */}
-                  <div>
-                    <Heading>INTO THE WAYOUT FUTURE</Heading>
-                  </div>
-                </TextWrapper>
+                <div>
+                  <Heading>INTO THE WAYOUT FUTURE</Heading>
+                </div>
               </Column>
               <Column>
-                {/* <ImageWrapper>
-                <Img src={img} alt="home.png" />
-              </ImageWrapper> */}
+                <animated.div
+                  class="card13"
+                  style={{ transform: props.xy.interpolate(trans1) }}
+                />
+                <animated.div
+                  class="card23"
+                  style={{ transform: props.xy.interpolate(trans2) }}
+                />
+                <animated.div
+                  class="card33"
+                  style={{ transform: props.xy.interpolate(trans3) }}
+                />
+                <animated.div
+                  class="card43"
+                  style={{ transform: props.xy.interpolate(trans5) }}
+                />
+                <animated.div
+                  class="card53"
+                  style={{ transform: props.xy.interpolate(trans4) }}
+                />
               </Column>
             </Row>
-            <HomeImg src={img1} alt="home.png" />
+            {/* <HomeImg src={img1} alt="home.png" /> */}
           </ContentWrap>
         </Container>
       </HeroSection>

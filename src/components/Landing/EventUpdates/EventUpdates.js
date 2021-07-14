@@ -34,6 +34,7 @@ const EventUpdates = ({ lineHeading, heading, description, img }) => {
   return (
     <>
       <HeroSection
+        to="/event"
         id="/home"
         onMouseMove={({ clientX: x, clientY: y }) => set({ xy: calc(x, y) })}
       >

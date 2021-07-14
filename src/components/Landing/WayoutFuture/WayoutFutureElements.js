@@ -1,8 +1,11 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
-export const HeroSection = styled.div`
+export const HeroSection = styled(Link)`
+  text-decoration: none;
+  display: flex;
   color: #fff;
-  padding: 60px 0;
+  // padding: 60px 0;
   background: #2f3a56;
   height: 850px;
 `;
@@ -13,6 +16,8 @@ export const Row = styled.div`
   flex-wrap: wrap;
   align-items: center;
   flex-direction: row;
+  height: 850px;
+  align-items: center;
 `;
 
 export const Column = styled.div`
@@ -22,6 +27,8 @@ export const Column = styled.div`
   flex: 1;
   max-width: 50%;
   flex-basis: 50%;
+
+  // background: #000;
 
   @media screen and (max-width: 768px) {
     max-width: 100%;

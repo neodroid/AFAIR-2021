@@ -1,6 +1,9 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
-export const HeroSection = styled.div`
+export const HeroSection = styled(Link)`
+  text-decoration: none;
+  display: flex;
   color: #fff;
   padding: 60px 0;
   background: #f7f2ec;
