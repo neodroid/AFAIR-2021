@@ -2,17 +2,20 @@ import styled from "styled-components";
 
 export const HeroSection = styled.div`
   color: #fff;
-  padding: 60px 0;
+  // padding: 60px 0;
   background: #fe7235;
   height: 850px;
 `;
 
 export const Row = styled.div`
   display: flex;
-  margin: 0 -15px -15px -15px;
+  // margin: 0 -15px -15px -15px;
   flex-wrap: wrap;
   align-items: center;
   flex-direction: row;
+  width: 100%;
+  height: 850px;
+  // background: #000;
 `;
 
 export const Column = styled.div`
@@ -32,9 +35,13 @@ export const Column = styled.div`
 `;
 
 export const TextWrapper = styled.div`
-  max-width: 540px;
+  width: 100%;
   padding-top: 0;
   padding-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  // justify-content: flex-end;
+  // background: #000;
 
   @media screen and (max-width: 768px) {
     padding-bottom: 65px;

@@ -6,6 +6,7 @@ import WayoutFuture from "../Landing/WayoutFuture/WayoutFuture";
 import EventUpdates from "../Landing/EventUpdates/EventUpdates";
 import { Carousel } from "react-bootstrap";
 import Carousell from "./Carousel";
+// import Card from "../Landing/Tridi";
 
 import img1 from "../Assets/imgs/New/NewConceptRight.png";
 
@@ -15,9 +16,10 @@ const Landing = () => {
   return (
     <>
       <Navbar />
+      {/* <Card /> */}
       <Hero {...HeroData} />
-      {/* <EventUpdates {...HeroData} /> */}
-      {/* <WayoutFuture /> */}
+      <EventUpdates {...HeroData} />
+      <WayoutFuture />
       {/* <Carousell /> */}
       <Footer />
     </>

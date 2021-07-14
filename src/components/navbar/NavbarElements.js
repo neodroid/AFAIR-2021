@@ -6,20 +6,21 @@ import { Link as Scroll } from "react-scroll";
 import { Container } from "../../GlobalStyles";
 
 export const Nav = styled.nav`
-  background: transparent;
+  // background: transparent;
   height: 80px;
   display: flex;
   justify-content: center;
   z-index: 999;
   position: sticky;
   position: -webkit-sticky; /* Safari */
-  background-color: ${({ scrollNav }) => (scrollNav ? "#fff" : "transparent")};
+  // background-color: ${({ scrollNav }) =>
+    scrollNav ? "#fff" : "transparent"};
   background-color: #a8d0da;
   font-size: 1.2rem;
   top: 0;
   align-items: center;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
-  opacity: 85%;
+  // opacity: 85%;
   transition: 0.8s all ease;
 
   @media screen and (max-width: 960px) {
