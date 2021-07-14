@@ -5,6 +5,7 @@ export const HeroSection = styled.div`
   color: #fff;
   padding: 60px 0;
   background: #f7f2ec;
+  height: 700px;
 `;
 
 export const Row = styled.div`
@@ -35,6 +36,7 @@ export const TextWrapper = styled.div`
   max-width: 540px;
   padding-top: 0;
   padding-bottom: 60px;
+  margin-top: 100px;
 
   @media screen and (max-width: 768px) {
     padding-bottom: 65px;

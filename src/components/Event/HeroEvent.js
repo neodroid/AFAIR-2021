@@ -14,7 +14,6 @@ import {
 } from "./HeroElements";
 
 import { Container } from "../../GlobalStyles";
-import img3 from "../Assets/imgs/EventRight.png";
 import { useSpring, animated } from "react-spring";
 import "./styles.css";
 
@@ -29,7 +28,7 @@ const trans4 = (x, y) => `translate3d(${x / 3.5 + 200}px,${y / 3.5 + 30}px,0)`;
 const trans5 = (x, y) => `translate3d(${x / 14 - 500}px,${y / 100 - 300}px,0)`;
 const trans6 = (x, y) => `translate3d(${x / 5 + 100}px,${y / 5 - 40}px,0)`;
 
-const HeroConcept = ({ lineHeading, heading, description, img }) => {
+const HeroConcept = ({ img }) => {
   const [props, set] = useSpring(() => ({
     xy: [0, 0],
     config: { mass: 10, tension: 550, friction: 140 },
@@ -41,7 +40,6 @@ const HeroConcept = ({ lineHeading, heading, description, img }) => {
   return (
     <>
       <HeroSection
-        id="/home"
         onMouseMove={({ clientX: x, clientY: y }) => set({ xy: calc(x, y) })}
       >
         <Container>
@@ -52,8 +50,6 @@ const HeroConcept = ({ lineHeading, heading, description, img }) => {
                 <div>
                   <Line>AFAIR 2022</Line>
                 </div>
-
-                <div>{/* <Paragraph>{description}</Paragraph> */}</div>
               </TextWrapper>
             </Column>
             <Column>

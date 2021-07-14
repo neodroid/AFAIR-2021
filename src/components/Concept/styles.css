@@ -1,0 +1,56 @@
+.Event1,
+.Event2,
+.Event3,
+.Event4,
+.Event5,
+.Event6 {
+  position: absolute;
+  border-radius: 5px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  will-change: transform;
+}
+
+.Event1 {
+  z-index: 2;
+  width: 440px;
+  height: 444px;
+  background-image: url("../Assets/imgs/Tridi/EventPage/mascots\ \(2\).png");
+}
+
+.Event2 {
+  z-index: 3;
+  width: 162px;
+  height: 135px;
+  background-image: url("../Assets/imgs/Tridi/EventPage/mascots2\ 11\ \(2\).png");
+}
+
+.Event3 {
+  z-index: 4;
+  opacity: 0.9;
+  width: 150px;
+  height: 90px;
+  background-image: url("../Assets/imgs/Tridi/EventPage/mascots2\ 12.png");
+}
+
+.Event4 {
+  z-index: 5;
+  width: 200px;
+  height: 100px;
+  background-image: url("../Assets/imgs/Tridi/EventPage/mascots\ \(3\).png");
+}
+
+.Event5 {
+  z-index: 7;
+  width: 162px;
+  height: 86px;
+  background-image: url("../Assets/imgs/Tridi/Wayout/mascots2\ 11.png");
+}
+
+.Event6 {
+  z-index: 4;
+  width: 663px;
+  height: 344px;
+  background-image: url("../Assets/imgs/Tridi/EventPage/mascots\ \(4\).png");
+}

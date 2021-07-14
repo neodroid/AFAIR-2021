@@ -22,13 +22,31 @@ import img1 from "../Assets/imgs/CompetitionImg.png";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
-const Hero = ({ lineHeading, heading, description, img }) => {
+import { useSpring, animated } from "react-spring";
+import "./styles.css";
+
+const calc = (x, y) => [x - window.innerWidth / 2, y - window.innerHeight / 2];
+const trans1 = (x, y) => `translate3d(${x / 10 + 250}px,${y / 10 + 50}px,0)`;
+const trans2 = (x, y) => `translate3d(${x / 14 + 200}px,${y / 14 - 100}px,0)`;
+const trans3 = (x, y) => `translate3d(${x / 6 - 250}px,${y / 6 - 200}px,0)`;
+const trans4 = (x, y) => `translate3d(${x / 3.5 + 200}px,${y / 3.5 + 30}px,0)`;
+const trans5 = (x, y) => `translate3d(${x / 14 + 100}px,${y / 100 - 200}px,0)`;
+const trans6 = (x, y) => `translate3d(${x / 19 + 520}px,${y / 100 - 340}px,0)`;
+
+const Hero = ({ lineHeading, heading, img }) => {
+  const [props, set] = useSpring(() => ({
+    xy: [0, 0],
+    config: { mass: 10, tension: 550, friction: 140 },
+  }));
+
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
   return (
     <>
-      <HeroSection id="/home">
+      <HeroSection
+        onMouseMove={({ clientX: x, clientY: y }) => set({ xy: calc(x, y) })}
+      >
         <Container>
           <ContentWrap>
             <Row data-aos="fade-up">
@@ -51,8 +69,33 @@ const Hero = ({ lineHeading, heading, description, img }) => {
                   </div>
                 </TextWrapper>
               </Column>
+              <Column>
+                <animated.div
+                  class="Competition1"
+                  style={{ transform: props.xy.interpolate(trans1) }}
+                />
+                <animated.div
+                  class="Competition2"
+                  style={{ transform: props.xy.interpolate(trans2) }}
+                />
+                <animated.div
+                  class="Competition3"
+                  style={{ transform: props.xy.interpolate(trans3) }}
+                />
+                <animated.div
+                  class="Competition4"
+                  style={{ transform: props.xy.interpolate(trans5) }}
+                />
+                <animated.div
+                  class="Competition5"
+                  style={{ transform: props.xy.interpolate(trans4) }}
+                />
+                <animated.div
+                  class="Competition6"
+                  style={{ transform: props.xy.interpolate(trans6) }}
+                />
+              </Column>
             </Row>
-            <HomeImg src={img1} alt="home.png" />
           </ContentWrap>
         </Container>
       </HeroSection>
