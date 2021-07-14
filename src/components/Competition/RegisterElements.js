@@ -4,9 +4,9 @@ export const RegisterSection = styled.div`
   color: #fff;
   padding: 60px 0;
   background: #f7f2ec;
-  position: sticky;
+  // position: sticky;
   bottom: 10;
-  z-index: 500;
+  // z-index: 500;
 `;
 
 export const Button1 = styled.button`
@@ -69,4 +69,45 @@ export const ContentWrap = styled.div`
   margin-top: -400px;
   margin-bottom: -25px;
   justify-content: flex-end;
+`;
+
+export const PaymentWrap = styled.div`
+  margin-bottom: 20px;
+`;
+export const TitlePay = styled.div`
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: justify;
+  letter-spacing: -0.015em;
+  margin-bottom: 20px;
+
+  color: #2f3a56;
+`;
+export const RekWrap = styled.div`
+  display: flex;
+`;
+export const Name = styled.div`
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: justify;
+  letter-spacing: -0.015em;
+
+  color: #2f3a56;
+`;
+export const Num = styled.div`
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: justify;
+  letter-spacing: -0.015em;
+
+  color: #2f3a56;
 `;

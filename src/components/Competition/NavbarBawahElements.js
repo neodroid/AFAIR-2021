@@ -13,15 +13,16 @@ export const Nav = styled.nav`
   z-index: 999;
   position: -webkit-sticky; /* Safari */
   position: sticky;
-  background-color: ${({ scrollNav }) => (scrollNav ? "#fff" : "transparent")};
+  // background-color: ${({ scrollNav }) =>
+    scrollNav ? "#fff" : "transparent"};
   background-color: #a8d0da;
   font-size: 1.2rem;
   top: 0;
   align-items: center;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
-  opacity: 85%;
+  // opacity: 85%;
   transition: 0.8s all ease;
-  top: 80px;
+  top: 79px;
 
   @media screen and (max-width: 960px) {
     opacity: 100%;

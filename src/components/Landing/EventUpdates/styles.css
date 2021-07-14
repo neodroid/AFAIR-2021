@@ -1,35 +1,8 @@
-html,
-body,
-/* #root {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  background-color: white;
-} */
-
-body {
-  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir,
-    helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
-  background: transparent;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  cursor: default;
-}
-
-/* #root {
-  overflow: hidden;
-  background: #f0f0f0;
-} */
-
 .card12,
-.card2,
-.card3,
-.card5,
+.card24,
+.card34,
+.card54,
+.card44,
 .card42 {
   position: absolute;
   border-radius: 5px;
@@ -41,29 +14,24 @@ body {
 
 .card12 {
   z-index: 2;
-  /* min-width: 60ch;
-  min-height: 60ch; */
   width: 546px;
   height: 400px;
-  /* max-width: 100ch;
-  max-height: 100ch; */
   background-image: url("../../Assets/imgs/Tridi/EventUpdates/Duduk.png");
-  /* background-color: aqua; */
 }
 
-.card2 {
+.card24 {
   z-index: 3;
-  width: 200px;
-  height: 125px;
-  background-image: url("../../Assets/imgs/Tridi/KotakTengah.png");
+  width: 162px;
+  height: 86px;
+  background-image: url("../../Assets/imgs/Tridi/EventUpdates/mascots1.png");
 }
 
-.card3 {
+.card34 {
   z-index: 4;
   opacity: 0.9;
   width: 150px;
   height: 60px;
-  background-image: url("../../Assets/imgs/Tridi/KotakKiriAtas.png");
+  background-image: url("../../Assets/imgs/Tridi/EventUpdates/mascots2.png");
 }
 
 .card42 {
@@ -73,20 +41,16 @@ body {
   background-image: url("../../Assets/imgs/Tridi/EventUpdates/Gantung.png");
 }
 
-.card5 {
-  z-index: 1;
-  width: 700px;
-  height: 700px;
-  background-image: url("../../Assets/imgs/Tridi/Bekgron.png");
+.card44 {
+  z-index: 7;
+  width: 162px;
+  height: 86px;
+  background-image: url("../../Assets/imgs/Tridi/EventUpdates/mascots3.png");
 }
 
-.container {
-  margin-left: 15%;
-  margin-top: -8%;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: blue;
+.card54 {
+  z-index: 1;
+  width: 144px;
+  height: 125px;
+  background-image: url("../../Assets/imgs/Tridi/EventUpdates/mascots4.png");
 }

@@ -95,3 +95,43 @@ export const FAQ2Img = styled.img`
     // max-width: 450px;
   }
 `;
+
+export const ContactTittle = styled.div`
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 18px;
+  /* identical to box height */
+
+  letter-spacing: -0.015em;
+  margin-bottom: 20px;
+
+  color: #000000;
+`;
+export const ContactsWrap = styled.div`
+  display: flex;
+`;
+export const ContactChild = styled.div`
+  margin-right: 20px;
+`;
+export const Name = styled.div`
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: -0.015em;
+
+  color: #000000;
+`;
+export const Data = styled.div`
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: -0.015em;
+
+  color: #000000;
+`;

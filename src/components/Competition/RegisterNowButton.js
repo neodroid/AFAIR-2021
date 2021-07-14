@@ -2,11 +2,11 @@ import React from "react";
 
 import {
   RegisterSection,
-  Row,
-  Column,
-  TextWrapper,
-  Line,
-  Heading,
+  PaymentWrap,
+  TitlePay,
+  RekWrap,
+  Name,
+  Num,
   ContentWrap,
   HomeImg,
   Img,
@@ -24,10 +24,23 @@ function RegisterButton({ lineHeading, heading, description, img }) {
     <>
       <RegisterSection id="/home">
         <Container>
-          {/* <ContentWrap>
-            <HomeImg src={imgRight} alt="home.png" />
-          </ContentWrap> */}
-
+          {/* <ContentWrap>asdasdsa</ContentWrap> */}
+          <PaymentWrap>
+            <TitlePay>
+              Registration fees can be transferred to the account
+            </TitlePay>
+            <RekWrap>
+              <Name>Domestic :</Name>
+              <Num>6755101358 (BCA - ADE SEVRITA GRACE)</Num>
+            </RekWrap>
+            <RekWrap>
+              <Name>Overseas :</Name>
+              <Num>
+                paypal.me/chalistangeline (PayPal - CHALISTA ANGELINE) CENAIDJA
+                (SWIFT BCA)
+              </Num>
+            </RekWrap>
+          </PaymentWrap>
           <ButtonWrap>
             <Button1>REGISTER NOW</Button1>
           </ButtonWrap>

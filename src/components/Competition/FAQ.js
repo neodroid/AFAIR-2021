@@ -11,13 +11,18 @@ import {
   FAQWrapper,
   FAQWrapper2,
   FAQ2Img,
+  ContactTittle,
+  ContactsWrap,
+  ContactChild,
+  Name,
+  Data,
 } from "./FAQElements";
 
 import { Container } from "../../GlobalStyles";
 import imgRight from "../Assets/imgs/FAQ1.png";
 import imgBottom from "../Assets/imgs/FAQ2.png";
 
-function FAQ({ lineHeading, heading, description, img }) {
+function FAQ() {
   return (
     <>
       <EventDescSection>
@@ -37,62 +42,96 @@ function FAQ({ lineHeading, heading, description, img }) {
               </FAQText>
             </RowChild>
             <RowChild>
-              <FAQQuestion>Will there be a presentation session?</FAQQuestion>
+              <FAQQuestion>
+                Does my project have to be on a specific site?
+              </FAQQuestion>
               <FAQText>
-                There will be a presentation session for the 5 finalists of the
-                competition.
-              </FAQText>
-            </RowChild>
-            <RowChild>
-              <FAQQuestion>What is the language used for our work?</FAQQuestion>
-              <FAQText>
-                Please kindly use english as the language for your contents.
+                No, The design could be siteless if desired. Feel free to
+                explore the possibilities from the brief we have provided!
               </FAQText>
             </RowChild>
             <RowChild>
               <FAQQuestion>
-                Can we submit a work from another competition?
+                Can I submit a project that was done in a school studio?
               </FAQQuestion>
               <FAQText>
-                No, you are not allowed to submit an already published work.
+                Yes! Participants are welcome to submit projects that were done
+                in school as long as they meet the requirements of the
+                competition.
+              </FAQText>
+            </RowChild>
+            <RowChild>
+              <FAQQuestion>
+                What type of building should I design for this competition?
+              </FAQQuestion>
+              <FAQText>
+                Buildings can be of any program, as long as the design can be
+                occupied for various activites, including living activities.
               </FAQText>
             </RowChild>
           </Row>
           <Row>
             <RowChild>
               <FAQQuestion>
-                Can I participate with my friends from other major?
+                What should I do if I miss/lost/forgot my identification number?
               </FAQQuestion>
               <FAQText>
-                Yes you can. It is not a problem as long as one of the member of
-                the group is studying in architecture major.
-              </FAQText>
-            </RowChild>
-            <RowChild>
-              <FAQQuestion>When will the winner be announced?</FAQQuestion>
-              <FAQText>
-                The winner of the competition will be announce during our main
-                event on January 2022.
-              </FAQText>
-            </RowChild>
-            <RowChild>
-              <FAQQuestion>What if we submit our work late?</FAQQuestion>
-              <FAQText>
-                There will be a penalty for those who are late for the
-                submission. Their points will be reduced depending on how late
-                their submission is.
+                You can contact the competition committee trough Email, LINE, or
+                WhatsApp that has been attached on AFAIR UI Competition TOR and
+                afairui.com. Then you can follow the instruction from the
+                committee.
               </FAQText>
             </RowChild>
             <RowChild>
               <FAQQuestion>
-                Is there any other requirements for the site?
+                Can I change team member after the registration?
               </FAQQuestion>
               <FAQText>
-                Nope! Feel free to explore the possibilities from the brief we
-                have provided!
+                No, you will not be allowed to change, add, or remove members
+                whose names are submitted in the registration form.
               </FAQText>
             </RowChild>
+            <RowChild>
+              <FAQQuestion>
+                Is there any other design restrictions? Such as how many floors
+                allowed?
+              </FAQQuestion>
+              <FAQText>
+                TNo, there is only a maximum floor plan area of 30m2, but
+                participants are welcomed to integrate the design with the area
+                outside the site.
+              </FAQText>
+            </RowChild>
+            <RowChild>
+              <FAQQuestion>
+                Is there a difference in assessment between individual and team?
+              </FAQQuestion>
+              <FAQText>No. The judging criteria between them are same.</FAQText>
+            </RowChild>
           </Row>
+          <ContactTittle>
+            For further information, please kindly contact us below!
+          </ContactTittle>
+          <ContactsWrap>
+            <ContactChild>
+              <Name>Ariq Dhia Athallah</Name>
+              <Data>ariq.dhia@ui.ac.id</Data>
+              <Data>+62 811 197 790</Data>
+              <Data>LINE ID ariqdhia</Data>
+            </ContactChild>
+            <ContactChild>
+              <Name>Gusti Nadya</Name>
+              <Data>gusti.ayu85@ui.ac.id</Data>
+              <Data>+62 8188 0629 6188</Data>
+              <Data>LINE ID gstayu.nadya</Data>
+            </ContactChild>
+            <ContactChild>
+              <Name>Gina Khairunnisa</Name>
+              <Data>gina.khairunnisa@ui.ac.id</Data>
+              <Data>+62 8121 1902 577</Data>
+              <Data>LINE ID ginakhairunnisa2001</Data>
+            </ContactChild>
+          </ContactsWrap>
           <FAQWrapper2>
             <FAQ2Img src={imgBottom} alt="home.png" />
           </FAQWrapper2>

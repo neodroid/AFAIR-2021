@@ -1,0 +1,56 @@
+.Concept1,
+.Concept2,
+.Concept3,
+.Concept4,
+.Concept5,
+.Concept6 {
+  position: absolute;
+  border-radius: 5px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  will-change: transform;
+}
+
+.Concept1 {
+  z-index: 2;
+  width: 400px;
+  height: 700px;
+  background-image: url("../Assets/imgs/Tridi/ConceptBerdiri.png");
+}
+
+.Concept2 {
+  z-index: 3;
+  width: 162px;
+  height: 86px;
+  background-image: url("../Assets/imgs/Tridi/EventUpdates/mascots1.png");
+}
+
+.Concept3 {
+  z-index: 4;
+  opacity: 0.9;
+  width: 150px;
+  height: 60px;
+  background-image: url("../Assets/imgs/Tridi/EventUpdates/mascots2.png");
+}
+
+.Concept4 {
+  z-index: 5;
+  width: 200px;
+  height: 70px;
+  background-image: url("../Assets/imgs/Tridi/mascotsBiruKecil.png");
+}
+
+.Concept5 {
+  z-index: 7;
+  width: 162px;
+  height: 86px;
+  background-image: url("../Assets/imgs/Tridi/Wayout/mascots2\ 11.png");
+}
+
+.Concept6 {
+  z-index: 4;
+  width: 170px;
+  height: 125px;
+  background-image: url("../Assets/imgs/Tridi/Wayout/mascots2\ 11\ \(1\).png");
+}

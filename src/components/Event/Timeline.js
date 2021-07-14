@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import {
   EventDescSection,
@@ -18,14 +18,23 @@ import img from "../Assets/imgs/TimelineFix.png";
 import imgRight from "../Assets/imgs/EventBawahKanan.png";
 import imgLeft from "../Assets/imgs/ConceptBottomRight.png";
 
-function Timeline({ lineHeading, heading, description }) {
+import Aos from "aos";
+import "aos/dist/aos.css";
+
+const Timeline = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
+
   return (
     <>
       <EventDescSection>
         <Container>
-          <Line>KEEP AN EYE FOR OUR UPCOMING EVENTS!</Line>
-          <LogoImg src={img} alt="home.png" />
-          <IMGWrap>
+          <Line data-aos="fade-up">KEEP AN EYE FOR OUR UPCOMING EVENTS!</Line>
+          <div data-aos="fade-up">
+            <LogoImg src={img} alt="home.png" />
+          </div>
+          <IMGWrap data-aos="fade-up">
             <IMG2 src={imgRight} alt="home.png" />
             <IMG1 src={imgLeft} alt="home.png" />
           </IMGWrap>
@@ -33,6 +42,6 @@ function Timeline({ lineHeading, heading, description }) {
       </EventDescSection>
     </>
   );
-}
+};
 
 export default Timeline;

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import {
   EventDescSection,
@@ -19,14 +19,20 @@ import {
 import { Container } from "../../GlobalStyles";
 import img1 from "../Assets/imgs/New/NewConceptRight.png";
 
-function ConceptDesc({ lineHeading, heading, description }) {
+import Aos from "aos";
+import "aos/dist/aos.css";
+
+const ConceptDesc = ({ lineHeading, heading, description }) => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   return (
     <>
       <EventDescSection>
         <Container>
           <KananKiri>
             <Row>
-              <RowChild>
+              <RowChild data-aos="fade-left">
                 <Judul>Into</Judul>
                 <ListNumber>
                   <Tipis>
@@ -36,7 +42,7 @@ function ConceptDesc({ lineHeading, heading, description }) {
                   </Tipis>
                 </ListNumber>
               </RowChild>
-              <RowChild>
+              <RowChild data-aos="fade-up">
                 <Judul>Wayout</Judul>
                 <ListNumber>
                   <Tipis>
@@ -45,7 +51,7 @@ function ConceptDesc({ lineHeading, heading, description }) {
                   </Tipis>
                 </ListNumber>
               </RowChild>
-              <RowChild>
+              <RowChild data-aos="fade-right">
                 <Judul>Future</Judul>
                 <ListNumber>
                   <Tipis>
@@ -65,6 +71,6 @@ function ConceptDesc({ lineHeading, heading, description }) {
       </EventDescSection>
     </>
   );
-}
+};
 
 export default ConceptDesc;
