@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import {
   HeroSection,
@@ -19,7 +19,14 @@ import { Container } from "../../GlobalStyles";
 import img2 from "../Assets/imgs/New/NewEventLeft.png";
 import img3 from "../Assets/imgs/New/NewEventRIght.png";
 
-function HeroConcept({ lineHeading, heading, description, img }) {
+import Aos from "aos";
+import "aos/dist/aos.css";
+
+const HeroConcept = ({ lineHeading, heading, description, img }) => {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
+
   return (
     <>
       <HeroSection id="/home">
@@ -30,7 +37,7 @@ function HeroConcept({ lineHeading, heading, description, img }) {
                 <div>
                   <HomeImg src={img2} alt="home.png" />
                 </div>
-                <LogoImg src={img} alt="home.png" />
+                <LogoImg data-aos="fade-up" src={img} alt="home.png" />
                 <div></div>
 
                 <div>{/* <Paragraph>{description}</Paragraph> */}</div>
@@ -42,7 +49,7 @@ function HeroConcept({ lineHeading, heading, description, img }) {
               </ImageWrapper>
             </Column>
           </Row>
-          <DivLine>
+          <DivLine data-aos="fade-up">
             <Heading>A-TALK </Heading>
             <Line>WEBINAR SERIES</Line>
           </DivLine>
@@ -50,6 +57,6 @@ function HeroConcept({ lineHeading, heading, description, img }) {
       </HeroSection>
     </>
   );
-}
+};
 
 export default HeroConcept;

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import {
   EventDescSection,
@@ -21,14 +21,20 @@ import img1 from "../Assets/imgs/Contact/PartnerTengahKanan.png";
 import img2 from "../Assets/imgs/New/NewPartnerBawahLeft.png";
 import img3 from "../Assets/imgs/Contact/PartnerBawahKanan.png";
 
-function ConceptDesc({ lineHeading, heading, description }) {
+import Aos from "aos";
+import "aos/dist/aos.css";
+
+function ConceptDesc() {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
   return (
     <>
       <EventDescSection>
         <Container>
           <KananKiri>
             <Row>
-              <RowChild>
+              <RowChild data-aos="fade-left">
                 <Judul>General</Judul>
                 <ListNumber>
                   <Tipis>humasafair2022@gmail.com</Tipis>
@@ -42,7 +48,7 @@ function ConceptDesc({ lineHeading, heading, description }) {
                   </Gabung>
                 </ListNumber>
               </RowChild>
-              <RowChild>
+              <RowChild data-aos="fade-up">
                 <Judul>Media Partner</Judul>
                 <ListNumber>
                   <Gabung>
@@ -55,7 +61,7 @@ function ConceptDesc({ lineHeading, heading, description }) {
                   </Gabung>
                 </ListNumber>
               </RowChild>
-              <RowChild>
+              <RowChild data-aos="fade-right">
                 <Judul>Media Sponsor</Judul>
                 <ListNumber>
                   <Gabung>

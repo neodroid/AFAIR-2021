@@ -1,24 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
 
-import {
-  DescSection,
-  Row,
-  RowChild,
-  DescText,
-  DescTitle,
-  Judul,
-  HomeImg,
-  ContentWrap,
-  Container,
-  LogoImg,
-} from "./CompetitionDescElements";
-
-import img1 from "../Assets/imgs/CompetitionsDesc/mascots.png";
-import img2 from "../Assets/imgs/CompetitionsDesc/mascots-1.png";
-import img3 from "../Assets/imgs/CompetitionsDesc/mascots-2.png";
-import img4 from "../Assets/imgs/CompetitionsDesc/mascots-3.png";
-import img5 from "../Assets/imgs/CompetitionsDesc/mascots-4.png";
-import imgRight from "../Assets/imgs/RegisterNow.png";
+import { Row, RowChild } from "./CompetitionDescElements";
 
 import Brief from "./Desc/Brief";
 import Prizes from "./Desc/Prizes";
@@ -26,33 +8,32 @@ import Dates from "./Desc/Dates";
 import Jury from "./Desc/Jury";
 import Fee from "./Desc/Fee";
 
+import Aos from "aos";
+import "aos/dist/aos.css";
+
 const CompetitionDesc = ({ lineHeading, heading, description, img }) => {
+  useEffect(() => {
+    Aos.init({ duration: 600 });
+  }, []);
   return (
     <>
-      {/* <DescSection>
-        <Container> */}
-      {/* <ContentWrap> */}
       <Row>
-        <RowChild id="/brief">
+        <RowChild data-aos="slide-right" id="/brief">
           <Brief />
         </RowChild>
-        <RowChild id="/prizes">
+        <RowChild data-aos="slide-left" id="/prizes">
           <Prizes />
         </RowChild>
-        <RowChild id="/dates">
+        <RowChild data-aos="slide-right" id="/dates">
           <Dates />
         </RowChild>
-        <RowChild id="/jury">
+        <RowChild data-aos="slide-left" id="/jury">
           <Jury />
         </RowChild>
-        <RowChild id="/fee">
+        <RowChild data-aos="slide-up" id="/fee">
           <Fee />
         </RowChild>
       </Row>
-      {/* <HomeImg src={imgRight} alt="home.png" /> */}
-      {/* </ContentWrap> */}
-      {/* </Container>
-      </DescSection> */}
     </>
   );
 };

@@ -6,10 +6,6 @@ import {
   IMG2,
   IMG1,
   Line,
-  Heading,
-  Paragraph,
-  ImageWrapper,
-  DivLine,
   LogoImg,
 } from "./TimelineElement";
 
@@ -23,7 +19,7 @@ import "aos/dist/aos.css";
 
 const Timeline = () => {
   useEffect(() => {
-    Aos.init({ duration: 2000 });
+    Aos.init({ duration: 1000 });
   }, []);
 
   return (
@@ -34,7 +30,7 @@ const Timeline = () => {
           <div data-aos="fade-up">
             <LogoImg src={img} alt="home.png" />
           </div>
-          <IMGWrap data-aos="fade-up">
+          <IMGWrap>
             <IMG2 src={imgRight} alt="home.png" />
             <IMG1 src={imgLeft} alt="home.png" />
           </IMGWrap>

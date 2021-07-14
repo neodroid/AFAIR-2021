@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import {
   EventDescSection,
@@ -22,7 +22,13 @@ import { Container } from "../../GlobalStyles";
 import imgRight from "../Assets/imgs/FAQ1.png";
 import imgBottom from "../Assets/imgs/FAQ2.png";
 
-function FAQ() {
+import Aos from "aos";
+import "aos/dist/aos.css";
+
+const FAQ = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   return (
     <>
       <EventDescSection>
@@ -32,7 +38,7 @@ function FAQ() {
             <FAQ1Img src={imgRight} alt="home.png" />
           </FAQWrapper>
           <Row>
-            <RowChild>
+            <RowChild data-aos="fade-right">
               <FAQQuestion>
                 Is the competition available for oversea students?
               </FAQQuestion>
@@ -41,7 +47,7 @@ function FAQ() {
                 students all over the world.
               </FAQText>
             </RowChild>
-            <RowChild>
+            <RowChild data-aos="fade-down">
               <FAQQuestion>
                 Does my project have to be on a specific site?
               </FAQQuestion>
@@ -50,7 +56,7 @@ function FAQ() {
                 explore the possibilities from the brief we have provided!
               </FAQText>
             </RowChild>
-            <RowChild>
+            <RowChild data-aos="fade-down">
               <FAQQuestion>
                 Can I submit a project that was done in a school studio?
               </FAQQuestion>
@@ -60,7 +66,7 @@ function FAQ() {
                 competition.
               </FAQText>
             </RowChild>
-            <RowChild>
+            <RowChild data-aos="fade-left">
               <FAQQuestion>
                 What type of building should I design for this competition?
               </FAQQuestion>
@@ -71,7 +77,7 @@ function FAQ() {
             </RowChild>
           </Row>
           <Row>
-            <RowChild>
+            <RowChild data-aos="fade-right">
               <FAQQuestion>
                 What should I do if I miss/lost/forgot my identification number?
               </FAQQuestion>
@@ -82,7 +88,7 @@ function FAQ() {
                 committee.
               </FAQText>
             </RowChild>
-            <RowChild>
+            <RowChild data-aos="fade-up">
               <FAQQuestion>
                 Can I change team member after the registration?
               </FAQQuestion>
@@ -91,7 +97,7 @@ function FAQ() {
                 whose names are submitted in the registration form.
               </FAQText>
             </RowChild>
-            <RowChild>
+            <RowChild data-aos="fade-up">
               <FAQQuestion>
                 Is there any other design restrictions? Such as how many floors
                 allowed?
@@ -102,7 +108,7 @@ function FAQ() {
                 outside the site.
               </FAQText>
             </RowChild>
-            <RowChild>
+            <RowChild data-aos="fade-left">
               <FAQQuestion>
                 Is there a difference in assessment between individual and team?
               </FAQQuestion>
@@ -139,6 +145,6 @@ function FAQ() {
       </EventDescSection>
     </>
   );
-}
+};
 
 export default FAQ;

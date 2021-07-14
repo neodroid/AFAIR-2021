@@ -1,10 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import {
   EventDescSection,
   Row,
   RowChild,
-  DescText,
   TitleWrap,
   TimeLine,
   Title,
@@ -16,13 +15,20 @@ import {
 import { Container } from "../../GlobalStyles";
 import img from "../Assets/imgs/New/NewEventBottom.png";
 
-function ConceptDesc({ lineHeading, heading, description }) {
+import Aos from "aos";
+import "aos/dist/aos.css";
+
+const ConceptDesc = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
+
   return (
     <>
       <EventDescSection>
         <Container>
           <Row>
-            <RowChild>
+            <RowChild data-aos="fade-left">
               <TitleWrap>
                 <TimeLine>WEBINAR 1 - 16 JULY 2021</TimeLine>
                 <Title>
@@ -36,7 +42,7 @@ function ConceptDesc({ lineHeading, heading, description }) {
                 those changes that will occur.
               </Desc>
             </RowChild>
-            <RowChild>
+            <RowChild data-aos="fade-up">
               <TitleWrap>
                 <TimeLine>WEBINAR 2 - 7 AUGUST 2021</TimeLine>
                 <Title>INTO THE FUTURE DWELLING </Title>
@@ -48,7 +54,7 @@ function ConceptDesc({ lineHeading, heading, description }) {
                 the environment arround us could affect our place to dwell.
               </Desc>
             </RowChild>
-            <RowChild>
+            <RowChild data-aos="fade-right">
               <TitleWrap>
                 <TimeLine>WEBINAR 3 - 21 AUGUST 2021</TimeLine>
                 <Title>
@@ -72,6 +78,6 @@ function ConceptDesc({ lineHeading, heading, description }) {
       </EventDescSection>
     </>
   );
-}
+};
 
 export default ConceptDesc;

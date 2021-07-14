@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import {
   HeroSection,
@@ -19,7 +19,14 @@ import { Container } from "../../GlobalStyles";
 import img2 from "../Assets/imgs/Contact/PartnerAtasKiri.png";
 import img3 from "../Assets/imgs/Contact/PartnerAtasKanan.png";
 
-function HeroConcept({ lineHeading, heading, description, img }) {
+import Aos from "aos";
+import "aos/dist/aos.css";
+
+const HeroConcept = ({ img }) => {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
+
   return (
     <>
       <HeroSection id="/home">
@@ -30,9 +37,9 @@ function HeroConcept({ lineHeading, heading, description, img }) {
                 <div>
                   <HomeImg src={img2} alt="home.png" />
                 </div>
-                <LogoImg src={img} alt="home.png" />
+                <LogoImg data-aos="fade-up" src={img} alt="home.png" />
                 <div>
-                  <Line>PARTNERSHIP</Line>
+                  <Line data-aos="fade-up">PARTNERSHIP</Line>
                 </div>
 
                 <div>{/* <Paragraph>{description}</Paragraph> */}</div>
@@ -45,7 +52,7 @@ function HeroConcept({ lineHeading, heading, description, img }) {
             </Column>
           </Row>
           <DivLine>
-            <Heading>
+            <Heading data-aos="fade-up">
               We are open to anyone who is willing to support us especially as a
               sponsor or as media partner to further expand our vision to bigger
               markets. For inquiries, feel free to contact us through:
@@ -55,6 +62,6 @@ function HeroConcept({ lineHeading, heading, description, img }) {
       </HeroSection>
     </>
   );
-}
+};
 
 export default HeroConcept;
