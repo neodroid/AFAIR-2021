@@ -75,20 +75,18 @@ export const Heading = styled.h1`
   font-family: Roboto;
 
   width: 621px;
-  height: 118px;
+  // height: 118px;
   left: 47px;
   top: 475px;
 
   font-style: normal;
   font-weight: bold;
-  font-size: 80px;
+  font-size: 64px;
 
   letter-spacing: -0.015em;
-
   color: #e24748;
-
   @media screen and (max-width: 480px) {
-    font-size: 45px;
+    font-size: 40px;
   }
 `;
 
@@ -263,4 +261,16 @@ export const HomeImg = styled.img`
 
 export const ContentWrap = styled.div`
   display: flex;
+`;
+
+export const Desc1 = styled.div`
+  width: 621px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -0.015em;
+  color: #e24748;
+  margin-bottom: 20px;
 `;

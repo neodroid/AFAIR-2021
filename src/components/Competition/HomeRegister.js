@@ -14,6 +14,7 @@ import {
   Button1,
   Button2,
   ButtonWrap,
+  Desc1,
 } from "./HeroElements";
 
 import { Container } from "../../GlobalStyles";
@@ -58,14 +59,17 @@ const Hero = ({ lineHeading, heading, img }) => {
                     <Line>{lineHeading}</Line>
                   </div>
                   <div>
-                    <Heading>{heading}</Heading>
+                    <Heading>COMPACT LIVING:</Heading>
+                  </div>
+                  <div>
+                    <Desc1>HOW WE LIVE IN THE FUTURE</Desc1>
                   </div>
                   <div>
                     <ButtonWrap>
                       <ButtonWrap1 target="_blank" to="register" isExternal>
                         <Button1>REGISTER NOW!</Button1>
                       </ButtonWrap1>
-                      <Button2>BRIEF</Button2>
+                      <Button2>TOR</Button2>
                     </ButtonWrap>
                   </div>
                 </TextWrapper>
