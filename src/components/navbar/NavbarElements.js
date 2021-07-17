@@ -21,6 +21,7 @@ export const Nav = styled.nav`
 
   @media screen and (max-width: 960px) {
     opacity: 100%;
+    position: fixed;
   }
 `;
 
@@ -35,7 +36,10 @@ export const Logo = styled(Link)`
   cursor: pointer;
   text-decoration: none;
   display: flex;
+
+  margin-left: -20px;
   align-items: center;
+  // background: #000;
 `;
 
 export const Icon = styled.img`
@@ -57,6 +61,7 @@ export const MobileIcon = styled.div`
     transform: translate(-100%, 60%);
     font-size: 1.8rem;
     cursor: pointer;
+    color: #000;
   }
 `;
 
@@ -105,7 +110,7 @@ export const Links = styled(Link)`
   height: 100%;
   font-family: "Poppins";
   font-weight: bold;
-  color: #6358f8;
+  color: #000;
   cursor: default;
 
   @media screen and (max-width: 960px) {
@@ -149,7 +154,7 @@ export const LinkScroll = styled(Link)`
 
 export const Button = styled.button`
   border-radius: 20px;
-  background: ${({ primary }) => (primary ? "#6358F8" : "#0467FB")};
+  background: ${({ primary }) => (primary ? "#000" : "#0467FB")};
   white-space: nowrap;
   padding: ${({ size }) => (size ? "12px 64px" : "10px 20px")};
   color: #fff;
@@ -161,7 +166,7 @@ export const Button = styled.button`
   &:hover {
     transition: all 0.2s ease-out;
     background: #fff;
-    background: ${({ primary }) => (primary ? "#0467FB" : "#6358F8")};
+    background: ${({ primary }) => (primary ? "#0467FB" : "#000")};
     color: #2f3a56;
   }
 

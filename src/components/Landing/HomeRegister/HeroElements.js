@@ -33,6 +33,18 @@ export const Column = styled.div`
     justify-content: center;
   }
 `;
+export const Column2 = styled.div`
+  margin-bottom: 15px;
+  padding-right: 15px;
+  padding-left: 15px;
+  flex: 1;
+  max-width: 50%;
+  flex-basis: 50%;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+`;
 
 export const TextWrapper = styled.div`
   max-width: 540px;
@@ -68,6 +80,10 @@ export const Heading = styled.h1`
   letter-spacing: -0.015em;
 
   color: #e24748;
+
+  @media screen and (max-width: 480px) {
+    width: 80%;
+  }
 `;
 
 export const Paragraph = styled.p`
@@ -82,6 +98,14 @@ export const Paragraph = styled.p`
   letter-spacing: -0.015em;
 
   color: #000000;
+
+  @media screen and (max-width: 960px) {
+    width: 500px;
+  }
+
+  @media screen and (max-width: 480px) {
+    width: 300px;
+  }
 `;
 
 export const Heading2 = styled.p`
@@ -95,6 +119,10 @@ export const Heading2 = styled.p`
   letter-spacing: -0.015em;
 
   color: #e24748;
+
+  @media screen and (max-width: 960px) {
+    width: 80%;
+  }
 `;
 
 export const ImageWrapper = styled.div`

@@ -8,6 +8,10 @@ export const HeroSection = styled(Link)`
   // padding: 60px 0;
   background: #fe7235;
   height: 850px;
+
+  @media screen and (max-width: 768px) {
+    height: 600px;
+  }
 `;
 
 export const Row = styled.div`
@@ -35,6 +39,24 @@ export const Column = styled.div`
     flex-basis: 100%;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    // background: #000;
+  }
+`;
+export const Column2 = styled.div`
+  margin-bottom: 15px;
+  padding-right: 15px;
+  padding-left: 15px;
+  flex: 1;
+  max-width: 50%;
+  flex-basis: 50%;
+  // background: #000;
+
+  @media screen and (max-width: 768px) {
+    max-width: 100%;
+    flex-basis: 100%;
+    display: none;
+    justify-content: center;
   }
 `;
 
@@ -61,6 +83,10 @@ export const Line = styled.div`
   letter-spacing: -0.015em;
 
   color: #f7f2ec;
+
+  @media screen and (max-width: 400px) {
+    font-size: 50px;
+  }
 `;
 
 export const Heading = styled.h1`
@@ -74,6 +100,10 @@ export const Heading = styled.h1`
   letter-spacing: -0.015em;
 
   color: #f7f2ec;
+
+  @media screen and (max-width: 400px) {
+    font-size: 70px;
+  }
 `;
 
 export const Paragraph = styled.p`

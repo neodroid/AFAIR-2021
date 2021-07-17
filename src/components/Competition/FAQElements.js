@@ -10,12 +10,20 @@ export const Row = styled.div`
   display: flex;
   justify-content: space-between;
   margin-bottom: 40px;
+
+  @media screen and (max-width: 480px) {
+    flex-direction: column;
+  }
 `;
 
 export const RowChild = styled.div`
   display: flex;
   width: 547px;
   flex-direction: column;
+
+  @media screen and (max-width: 480px) {
+    width: 100%;
+  }
 `;
 
 export const FAQText = styled.div`
@@ -29,6 +37,9 @@ export const FAQText = styled.div`
   width: 241px;
 
   color: #000000;
+  @media screen and (max-width: 480px) {
+    width: 100%;
+  }
 `;
 
 export const Judul = styled.div`
@@ -56,6 +67,10 @@ export const FAQQuestion = styled.div`
   width: 241px;
 
   color: #2f3a56;
+  @media screen and (max-width: 480px) {
+    width: 100%;
+    margin-top: 20px;
+  }
 `;
 
 export const FAQ1Img = styled.img`
@@ -111,6 +126,9 @@ export const ContactTittle = styled.div`
 `;
 export const ContactsWrap = styled.div`
   display: flex;
+  @media screen and (max-width: 480px) {
+    flex-direction: column;
+  }
 `;
 export const ContactChild = styled.div`
   margin-right: 20px;

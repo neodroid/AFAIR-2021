@@ -4,18 +4,12 @@ import {
   HeroSection,
   Row,
   Column,
-  TextWrapper,
-  Line,
+  Column2,
   Heading,
-  Paragraph,
-  HomeImg,
   ContentWrap,
-  LogoImg,
-  Heading2,
 } from "./WayoutFutureElements";
 
 import { Container } from "../../../GlobalStyles";
-import img1 from "../../Assets/imgs/Home3.png";
 
 import { useSpring, animated } from "react-spring";
 import "./styles.css"; // // Icons made by Freepik from www.flaticon.com
@@ -27,7 +21,7 @@ const trans3 = (x, y) => `translate3d(${x / 6 - 250}px,${y / 6 - 200}px,0)`;
 const trans4 = (x, y) => `translate3d(${x / 3.5 + 200}px,${y / 3.5 - 500}px,0)`;
 const trans5 = (x, y) => `translate3d(${x / 14 + 100}px,${y / 14 - 200}px,0)`;
 
-const EventUpdates = ({ lineHeading, heading, description, img }) => {
+const EventUpdates = () => {
   const [props, set] = useSpring(() => ({
     xy: [0, 0],
     config: { mass: 10, tension: 550, friction: 140 },
@@ -47,7 +41,7 @@ const EventUpdates = ({ lineHeading, heading, description, img }) => {
                   <Heading>INTO THE WAYOUT FUTURE</Heading>
                 </div>
               </Column>
-              <Column>
+              <Column2>
                 <animated.div
                   class="card13"
                   style={{ transform: props.xy.interpolate(trans1) }}
@@ -68,7 +62,7 @@ const EventUpdates = ({ lineHeading, heading, description, img }) => {
                   class="card53"
                   style={{ transform: props.xy.interpolate(trans4) }}
                 />
-              </Column>
+              </Column2>
             </Row>
           </ContentWrap>
         </Container>

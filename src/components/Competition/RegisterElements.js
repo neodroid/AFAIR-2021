@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const RegisterSection = styled.div`
   color: #fff;
@@ -37,9 +38,7 @@ export const Button1 = styled.button`
 
   &:hover {
     transition: all 0.2s ease-out;
-    background: #a8a8a8;
-    // background: ${({ primary }) => (primary ? "#0467FB" : "#6358F8")};
-    color: #fff;
+    background: #2f3a56;
   }
 
   @media screen and (max-width: 960px) {
@@ -88,6 +87,10 @@ export const TitlePay = styled.div`
 `;
 export const RekWrap = styled.div`
   display: flex;
+
+  @media screen and (max-width: 480px) {
+    flex-direction: column;
+  }
 `;
 export const Name = styled.div`
   font-family: Roboto;
@@ -110,4 +113,15 @@ export const Num = styled.div`
   letter-spacing: -0.015em;
 
   color: #2f3a56;
+`;
+
+export const ButtonWrap1 = styled(Link)`
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  width: 100%;
+
+  @media screen and (max-width: 480px) {
+    // margin-bottom: 20px;
+  }
 `;

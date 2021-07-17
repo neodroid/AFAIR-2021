@@ -7,10 +7,12 @@ import {
   IMG1,
   Line,
   LogoImg,
+  LogoImg2,
 } from "./TimelineElement";
 
 import { Container } from "../../GlobalStyles";
 import img from "../Assets/imgs/TimelineFix.png";
+import img2 from "../Assets/imgs/TimelineMobile.png";
 import imgRight from "../Assets/imgs/EventBawahKanan.png";
 import imgLeft from "../Assets/imgs/ConceptBottomRight.png";
 
@@ -29,6 +31,7 @@ const Timeline = () => {
           <Line data-aos="fade-up">KEEP AN EYE FOR OUR UPCOMING EVENTS!</Line>
           <div data-aos="fade-up">
             <LogoImg src={img} alt="home.png" />
+            <LogoImg2 src={img2} alt="home.png" />
           </div>
           <IMGWrap>
             <IMG2 src={imgRight} alt="home.png" />

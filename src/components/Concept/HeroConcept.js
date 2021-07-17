@@ -7,7 +7,7 @@ import {
   TextWrapper,
   Line,
   Heading,
-  HomeImg,
+  Column2,
   ImageWrapper,
   DivLine,
   LogoImg,
@@ -33,7 +33,7 @@ const trans4 = (x, y) => `translate3d(${x / 3.5 + 200}px,${y / 3.5 + 30}px,0)`;
 const trans5 = (x, y) => `translate3d(${x / 14 + 100}px,${y / 100 - 200}px,0)`;
 const trans6 = (x, y) => `translate3d(${x / 19 - 1000}px,${y / 19 - 340}px,0)`;
 
-const HeroConcept = ({ lineHeading, heading, description, img }) => {
+const HeroConcept = ({ img }) => {
   const [props, set] = useSpring(() => ({
     xy: [0, 0],
     config: { mass: 10, tension: 550, friction: 140 },
@@ -55,7 +55,7 @@ const HeroConcept = ({ lineHeading, heading, description, img }) => {
                 <LogoImg data-aos="fade-up" src={img} alt="home.png" />
               </TextWrapper>
             </Column>
-            <Column>
+            <Column2>
               {" "}
               <animated.div
                 class="Event1"
@@ -81,7 +81,7 @@ const HeroConcept = ({ lineHeading, heading, description, img }) => {
                 class="Event6"
                 style={{ transform: props.xy.interpolate(trans6) }}
               />
-            </Column>
+            </Column2>
           </Row>
           <DivLine data-aos="fade-up">
             <Heading>A-TALK </Heading>

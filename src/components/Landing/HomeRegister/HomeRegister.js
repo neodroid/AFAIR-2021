@@ -8,7 +8,7 @@ import {
   Line,
   Heading,
   Paragraph,
-  HomeImg,
+  Column2,
   ContentWrap,
   LogoImg,
   Heading2,
@@ -69,7 +69,7 @@ function Hero({ lineHeading, heading, description, img }) {
                   </div>
                 </TextWrapper>
               </Column>
-              <Column>
+              <Column2>
                 <animated.div
                   class="card1"
                   style={{ transform: props.xy.interpolate(trans1) }}
@@ -90,7 +90,7 @@ function Hero({ lineHeading, heading, description, img }) {
                   class="card4"
                   style={{ transform: props.xy.interpolate(trans4) }}
                 />
-              </Column>
+              </Column2>
             </Row>
             {/* <HomeImg src={img1} alt="home.png" /> */}
           </ContentWrap>

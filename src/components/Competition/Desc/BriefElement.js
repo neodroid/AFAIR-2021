@@ -35,6 +35,9 @@ export const DescText = styled.div`
   color: #000000;
 
   align-items: center;
+  @media screen and (max-width: 480px) {
+    width: 90%;
+  }
 `;
 
 export const DescTitle = styled.div`
@@ -79,6 +82,13 @@ export const Wrapper = styled.div`
   align-item: center;
   height: 500px;
   background: #f7f2ec;
+
+  @media screen and (max-width: 768px) {
+    height: auto;
+    flex-direction: column;
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
 `;
 
 export const Container = styled.div`

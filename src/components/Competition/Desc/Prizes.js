@@ -2,7 +2,7 @@ import React from "react";
 
 import {
   DescSection,
-  Row,
+  LogoImg3,
   Full,
   LogoImg2,
   DescTitle,
@@ -14,9 +14,10 @@ import {
 } from "./PrizeElement";
 
 import img1 from "../../Assets/imgs/CompetitionsDesc/mascotsPrize.png";
-import img2 from "../../Assets/imgs/Prizes.png";
+import img2 from "../../Assets/imgs/NewPrize.png";
+import img3 from "../../Assets/imgs/PrizeMobile.png";
 
-const Prizes = ({ lineHeading, heading, description, img }) => {
+const Prizes = () => {
   return (
     <>
       <Full>
@@ -28,6 +29,7 @@ const Prizes = ({ lineHeading, heading, description, img }) => {
             </Judul>
             <DescWrap>
               <LogoImg2 src={img2} alt="home.png" />
+              <LogoImg3 src={img3} alt="home.png" />
             </DescWrap>
           </Wrapper>
         </Container>

@@ -13,7 +13,10 @@ export const Row = styled.div`
 
 export const DescWrap = styled.div`
   display: flex;
+  width: 100%;
+
   align-items: center;
+  justify-content: center;
 `;
 
 export const Judul = styled.div`
@@ -63,12 +66,14 @@ export const LogoImg = styled.img`
 
 export const LogoImg2 = styled.img`
   width: 1100px;
-  
+
   display: inline-block;
   margin-left: -100px;
 
-  // @media screen and (max-width: 480px) {
-    // max-width: 450px;
+  @media screen and (max-width: 768px) {
+    margin-left: 0px;
+    height: auto;
+    width: 100%;
   }
 `;
 export const HomeImg = styled.img`
@@ -90,6 +95,14 @@ export const Wrapper = styled.div`
   // height: 500px;
   background: #f7f2ec;
   width: 100%;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    height: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+  }
 `;
 
 export const Container = styled.div`

@@ -2,7 +2,7 @@ import React from "react";
 
 import {
   DescSection,
-  Row,
+  LogoImg3,
   Full,
   LogoImg2,
   DescTitle,
@@ -14,7 +14,8 @@ import {
 } from "./DatesElement";
 
 import img1 from "../../Assets/imgs/CompetitionsDesc/mascots-4.png";
-import img2 from "../../Assets/imgs/Dates.png";
+import img2 from "../../Assets/imgs/NewDates.png";
+import img3 from "../../Assets/imgs/DatesMobile.png";
 
 const Dates = ({ lineHeading, heading, description, img }) => {
   return (
@@ -28,6 +29,7 @@ const Dates = ({ lineHeading, heading, description, img }) => {
             </Judul>
             <DescWrap>
               <LogoImg2 src={img2} alt="home.png" />
+              <LogoImg3 src={img3} alt="home.png" />
             </DescWrap>
           </Wrapper>
         </Container>

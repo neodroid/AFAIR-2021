@@ -21,17 +21,15 @@ const Fee = ({ lineHeading, heading, description, img }) => {
     <>
       <Full>
         <Container>
-          <Container>
-            <Wrapper>
-              <Judul>
-                <LogoImg src={img1} alt="home.png" />
-                <DescTitle>FEE</DescTitle>
-              </Judul>
-              <DescWrap>
-                <LogoImg2 src={img2} alt="home.png" />
-              </DescWrap>
-            </Wrapper>
-          </Container>
+          <Wrapper>
+            <Judul>
+              <LogoImg src={img1} alt="home.png" />
+              <DescTitle>FEE</DescTitle>
+            </Judul>
+            <DescWrap>
+              <LogoImg2 src={img2} alt="home.png" />
+            </DescWrap>
+          </Wrapper>
         </Container>
       </Full>
     </>

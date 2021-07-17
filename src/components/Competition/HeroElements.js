@@ -32,13 +32,26 @@ export const Column = styled.div`
   }
 `;
 
+export const Column2 = styled.div`
+  margin-bottom: 15px;
+  padding-right: 15px;
+  padding-left: 15px;
+  flex: 1;
+  max-width: 50%;
+  flex-basis: 50%;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+`;
+
 export const TextWrapper = styled.div`
   max-width: 540px;
   padding-top: 0;
   padding-bottom: 60px;
   margin-top: 100px;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 480px) {
     padding-bottom: 65px;
   }
 `;
@@ -52,6 +65,10 @@ export const Line = styled.div`
   margin-bottom: 16px;
   font-family: "Roboto";
   cursor: default;
+
+  @media screen and (max-width: 480px) {
+    font-size: 40px;
+  }
 `;
 
 export const Heading = styled.h1`
@@ -69,6 +86,10 @@ export const Heading = styled.h1`
   letter-spacing: -0.015em;
 
   color: #e24748;
+
+  @media screen and (max-width: 480px) {
+    font-size: 45px;
+  }
 `;
 
 export const Paragraph = styled.p`
@@ -138,15 +159,13 @@ export const LogoImg = styled.img`
 
 export const Button1 = styled.button`
   text-decoration: none;
-  // border-radius: 20px;
-  // background: ${({ primary }) => (primary ? "#6358F8" : "#0467FB")};
-  // white-space: nowrap;
+
   padding: ${({ size }) => (size ? "12px 64px" : "10px 20px")};
   color: #fff;
   outline: none;
   border: none;
   cursor: pointer;
-  // position: absolute;
+
   min-width: 302px;
   height: 46px;
   left: 47px;
@@ -170,8 +189,8 @@ export const Button1 = styled.button`
     background: #2f3a56;
   }
 
-  @media screen and (max-width: 960px) {
-    width: 100%;
+  @media screen and (max-width: 480px) {
+    width: 300px;
   }
 `;
 
@@ -181,6 +200,9 @@ export const ButtonWrap1 = styled(Link)`
   text-decoration: none;
   display: flex;
   align-items: center;
+  @media screen and (max-width: 480px) {
+    margin-bottom: 20px;
+  }
 `;
 
 export const Button2 = styled.button`
@@ -210,8 +232,8 @@ export const Button2 = styled.button`
     background: #2f3a56;
   }
 
-  @media screen and (max-width: 960px) {
-    width: 100%;
+  @media screen and (max-width: 480px) {
+    width: 300px;
   }
 `;
 
@@ -220,6 +242,10 @@ export const ButtonWrap = styled.div`
   // position: fixed;
   bottom: 0;
   z-index: 200;
+
+  @media screen and (max-width: 480px) {
+    flex-direction: column;
+  }
 `;
 
 export const HomeImg = styled.img`

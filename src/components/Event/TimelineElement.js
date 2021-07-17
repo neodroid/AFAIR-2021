@@ -8,14 +8,29 @@ export const EventDescSection = styled.div`
 
 export const LogoImg = styled.img`
   // width: 1477px;
-  margin-top:40px;
+  margin-top: 40px;
   width: 80%;
   height: auto;
-  z-index:100;
+  z-index: 100;
   position: relative;
-//   margin-bottom: -187px;
-  // @media screen and (max-width: 480px) {
-    // max-width: 450px;
+  display: block;
+  //   margin-bottom: -187px;
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
+`;
+export const LogoImg2 = styled.img`
+  // width: 1477px;
+  margin-top: 40px;
+  width: 80%;
+  height: auto;
+  z-index: 100;
+  position: relative;
+  display: none;
+  //   margin-bottom: -187px;
+  @media screen and (max-width: 480px) {
+    width: 60%;
+    display: block;
   }
 `;
 

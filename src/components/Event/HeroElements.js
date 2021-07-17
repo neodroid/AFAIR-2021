@@ -27,6 +27,20 @@ export const Column = styled.div`
     flex-basis: 100%;
     display: flex;
     justify-content: center;
+    // background: #000;
+  }
+`;
+
+export const Column2 = styled.div`
+  // margin-bottom: 15px;
+  padding-right: 15px;
+  padding-left: 15px;
+  flex: 1;
+  max-width: 50%;
+  flex-basis: 50%;
+
+  @media screen and (max-width: 768px) {
+    display: none;
   }
 `;
 
@@ -36,7 +50,7 @@ export const TextWrapper = styled.div`
   padding-bottom: 60px;
 
   @media screen and (max-width: 768px) {
-    padding-bottom: 65px;
+    width: 100%;
   }
 `;
 
@@ -55,6 +69,10 @@ export const Line = styled.div`
 
   color: #2f3a56;
   cursor: default;
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 export const Heading = styled.h1`
@@ -68,11 +86,20 @@ export const Heading = styled.h1`
   letter-spacing: -0.015em;
 
   color: #2f3a56;
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+
+  @media screen and (max-width: 400px) {
+    font-size: 60px;
+  }
 `;
 
 export const Paragraph = styled.div`
   margin-top: 20px;
   width: 479px;
+  text-align: justify;
 
   font-family: Roboto;
   font-style: normal;
@@ -81,6 +108,10 @@ export const Paragraph = styled.div`
   line-height: 19px;
 
   color: #2f3a56;
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 export const ImageWrapper = styled.div`

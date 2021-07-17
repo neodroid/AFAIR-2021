@@ -63,10 +63,6 @@ const ConceptDesc = ({ lineHeading, heading, description }) => {
             </Row>
             <LogoImg src={img1} alt="home.png" />
           </KananKiri>
-          {/* <KananKiri>
-            <LogoImg2 src={img2} alt="home.png" />
-            <LogoKanan src={img3} alt="home.png" />
-          </KananKiri> */}
         </Container>
       </EventDescSection>
     </>

@@ -38,9 +38,22 @@ export const FooterDiv = styled.div`
   font-size: 16px;
   font-style: normal;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 700px) {
     font-size: 12px;
-    margin-left: 30px;
+    // flex-direction: column;
+  }
+`;
+
+export const FooterDiv1 = styled.div`
+  display: flex;
+
+  font-family: "Poppins";
+  font-size: 16px;
+  font-style: normal;
+
+  @media screen and (max-width: 700px) {
+    font-size: 12px;
+    // flex-direction: column;
   }
 `;
 
@@ -57,7 +70,6 @@ export const FooterChildDiv = styled.div`
 
 export const FooterText = styled.div`
   display: flex;
-  margin-left: 15px;
   margin-right: 15px;
   font-family: "Poppins";
   font-size: 16px;
@@ -65,7 +77,6 @@ export const FooterText = styled.div`
 
   @media screen and (max-width: 768px) {
     font-size: 12px;
-    margin-left: 30px;
   }
 `;
 
@@ -98,7 +109,7 @@ export const Linksoc = styled.a`
 `;
 
 export const SideWrap = styled.div`
-  margin-left: 20px;
+  margin-right: 20px;
 `;
 export const Socmed = styled.div`
   display: flex;
@@ -126,7 +137,18 @@ export const FooterTextBold = styled.div`
   font-size: 15px;
   line-height: 18px;
   letter-spacing: -0.015em;
-  margin-left: 30px;
+  // margin-left: 30px;
   margin-bottom: 10px;
   color: #2f3a56;
+`;
+
+export const BigWrap = styled.div`
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  @media screen and (max-width: 700px) {
+    flex-direction: column;
+    margin-left: -20px;
+    height: 300px;
+  }
 `;

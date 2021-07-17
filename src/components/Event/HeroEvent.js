@@ -8,7 +8,7 @@ import {
   Line,
   Heading,
   Paragraph,
-  ImageWrapper,
+  Column2,
   RightImg,
   LogoImg,
 } from "./HeroElements";
@@ -52,7 +52,7 @@ const HeroConcept = ({ img }) => {
                 </div>
               </TextWrapper>
             </Column>
-            <Column>
+            <Column2>
               <animated.div
                 class="Concept1"
                 style={{ transform: props.xy.interpolate(trans1) }}
@@ -77,7 +77,7 @@ const HeroConcept = ({ img }) => {
                 class="Concept6"
                 style={{ transform: props.xy.interpolate(trans6) }}
               />
-            </Column>
+            </Column2>
           </Row>
 
           <Heading data-aos="fade-up">INTO THE WAYOUT FUTURE</Heading>

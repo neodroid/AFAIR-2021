@@ -4,11 +4,14 @@ export const EventDescSection = styled.div`
   color: #fff;
   padding: 60px 0;
   background: #f7f2ec;
+  margin-top: -100px;
 `;
 
 export const Row = styled.div`
   display: flex;
-  // justify-content: center;
+  @media screen and (max-width: 480px) {
+    flex-direction: column;
+  }
 `;
 
 export const RowChild = styled.div`
@@ -42,6 +45,7 @@ export const Judul = styled.div`
   line-height: 23px;
   letter-spacing: -0.015em;
   margin-bottom: 20px;
+  margin-top: 20px;
   color: #2f3a56;
 `;
 export const ListNumber = styled.div``;
@@ -71,12 +75,10 @@ export const KananKiri = styled.div`
   justify-content: space-between;
 `;
 export const LogoImg = styled.img`
-  
-  
   width: 200px;
-  
-  // @media screen and (max-width: 480px) {
-    // max-width: 450px;
+
+  @media screen and (max-width: 480px) {
+    display: none;
   }
 `;
 export const LogoImg2 = styled.img`

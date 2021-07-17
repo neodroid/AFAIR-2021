@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-// import icon from "../../components/Assets/imgs/newtab.png";
 import { FaTimes, FaBars } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
 
@@ -51,13 +50,13 @@ const Navbar = () => {
   window.addEventListener("resize", showButton);
 
   return (
-    <IconContext.Provider value={{ color: "#6358F8" }}>
+    <IconContext.Provider value={{ color: "#2F3A56" }}>
       <Nav scrollNav={scrollNav}>
         <NavContainer>
           <Logo to="/" onClick={closeMenu}>
-            <LinkScroll to="/" smooth onClick={closeMenu}>
-              <Icon src={LogoOnly} />
-            </LinkScroll>
+            {/* <LinkScroll to="/" smooth onClick={closeMenu}> */}
+            <Icon src={LogoOnly} />
+            {/* </LinkScroll> */}
           </Logo>
           <MobileIcon onClick={handleToggle}>
             {toggle ? <FaTimes /> : <FaBars />}
@@ -83,27 +82,6 @@ const Navbar = () => {
                 CONTACT
               </LinkScroll>
             </NavItem>
-            {/* <NavButton>
-                {button ? (
-                  <ButtonLink
-                    href=""
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <Button primary>CONTACT</Button>
-                  </ButtonLink>
-                ) : (
-                  <ButtonLink
-                    href=""
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <Button onClick={closeMenu} big primary>
-                      CONTACT
-                    </Button>
-                  </ButtonLink>
-                )}
-              </NavButton> */}
           </NavMenu>
         </NavContainer>
       </Nav>

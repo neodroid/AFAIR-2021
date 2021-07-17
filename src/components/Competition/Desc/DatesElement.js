@@ -63,12 +63,24 @@ export const LogoImg = styled.img`
 
 export const LogoImg2 = styled.img`
   width: 1100px;
-  
+
   display: inline-block;
   margin-left: -100px;
 
-  // @media screen and (max-width: 480px) {
-    // max-width: 450px;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+`;
+
+export const LogoImg3 = styled.img`
+  // width: 1100px;
+
+  display: none;
+  // margin-left: -100px;
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    display: block;
   }
 `;
 export const HomeImg = styled.img`
@@ -90,6 +102,13 @@ export const Wrapper = styled.div`
   height: 500px;
   background: #e24748;
   width: 100%;
+
+  @media screen and (max-width: 768px) {
+    height: auto;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
 `;
 
 export const Container = styled.div`

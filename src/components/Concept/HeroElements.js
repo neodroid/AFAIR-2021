@@ -4,6 +4,9 @@ export const HeroSection = styled.div`
   color: #fff;
   padding: 60px 0;
   background: #f7f2ec;
+  @media screen and (max-width: 768px) {
+    margin-top: -100px;
+  }
 `;
 
 export const Row = styled.div`
@@ -27,6 +30,18 @@ export const Column = styled.div`
     flex-basis: 100%;
     display: flex;
     justify-content: center;
+  }
+`;
+export const Column2 = styled.div`
+  // margin-bottom: 15px;
+  padding-right: 15px;
+  padding-left: 15px;
+  flex: 1;
+  max-width: 50%;
+  flex-basis: 50%;
+
+  @media screen and (max-width: 768px) {
+    display: none;
   }
 `;
 
@@ -131,6 +146,9 @@ export const LogoImg = styled.img`
 
 export const DivLine = styled.div`
   display: flex;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 export const HomeImg = styled.img`

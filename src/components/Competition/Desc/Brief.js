@@ -1,8 +1,6 @@
 import React from "react";
 
 import {
-  DescSection,
-  Row,
   Full,
   DescText,
   DescTitle,
@@ -15,7 +13,7 @@ import {
 
 import img1 from "../../Assets/imgs/CompetitionsDesc/mascots.png";
 
-function Brief({ lineHeading, heading, description, img }) {
+const Brief = () => {
   return (
     <>
       <Full>
@@ -42,6 +40,6 @@ function Brief({ lineHeading, heading, description, img }) {
       </Full>
     </>
   );
-}
+};
 
 export default Brief;

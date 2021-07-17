@@ -9,12 +9,24 @@ export const EventDescSection = styled.div`
 export const Row = styled.div`
   display: flex;
   justify-content: space-between;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+  }
 `;
 
 export const RowChild = styled.div`
   display: flex;
   flex-direction: column;
   width: 375px;
+
+  @media screen and (max-width: 768px) {
+    display: flex;
+    width: 90%;
+    justify-content: center;
+  }
 `;
 
 export const DescText = styled.div`
@@ -29,22 +41,18 @@ export const DescText = styled.div`
 `;
 
 export const LogoImg = styled.img`
-  // width: 1477px;
-  top:0;
+  top: 0;
   width: 100%;
-  z-index:100;
+  z-index: 100;
   position: relative;
   margin-bottom: -100px;
   margin-left: -100px;
-  // @media screen and (max-width: 480px) {
-    // max-width: 450px;
-  }
 `;
 
 export const TitleWrap = styled.div`
-  // display: flex;
-  // flex-direction: column;
-  height: 150px;
+  // height: 150px;
+  margin-bottom: 30px;
+  margin-top: 30px;
 `;
 export const TimeLine = styled.div`
   font-family: Roboto;
@@ -63,7 +71,6 @@ export const Title = styled.p`
   font-weight: 500;
   font-size: 42px;
   line-height: 49px;
-  // text-align: justify;
   letter-spacing: -0.015em;
 
   color: #2f3a56;

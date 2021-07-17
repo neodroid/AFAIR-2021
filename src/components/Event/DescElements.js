@@ -8,7 +8,12 @@ export const EventDescSection = styled.div`
 
 export const Row = styled.div`
   display: flex;
-  // justify-content: center;
+  @media screen and (max-width: 480px) {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: -100px;
+  }
 `;
 
 export const RowChild = styled.div`
@@ -17,6 +22,9 @@ export const RowChild = styled.div`
   margin-left: 10px;
   margin-right: 10px;
   flex-direction: column;
+  @media screen and (max-width: 480px) {
+    margin-bottom: 20px;
+  }
 `;
 
 export const DescText = styled.div`
@@ -69,14 +77,18 @@ export const Tebal = styled.div`
 export const KananKiri = styled.div`
   display: flex;
   justify-content: space-between;
+
+  @media screen and (max-width: 480px) {
+    width: 100%;
+    // flex-direction: column;
+    // background: #000;
+  }
 `;
 export const LogoImg = styled.img`
-  
-  
   width: 422px;
   margin-top: -400px;
-  // @media screen and (max-width: 480px) {
-    // max-width: 450px;
+  @media screen and (max-width: 480px) {
+    display: none;
   }
 `;
 export const LogoImg2 = styled.img`

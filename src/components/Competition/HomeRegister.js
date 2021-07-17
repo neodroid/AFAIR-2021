@@ -7,7 +7,7 @@ import {
   TextWrapper,
   Line,
   Heading,
-  HomeImg,
+  Column2,
   ContentWrap,
   ButtonWrap1,
   LogoImg,
@@ -45,11 +45,12 @@ const Hero = ({ lineHeading, heading, img }) => {
   return (
     <>
       <HeroSection
+        data-aos="fade-up"
         onMouseMove={({ clientX: x, clientY: y }) => set({ xy: calc(x, y) })}
       >
         <Container>
           <ContentWrap>
-            <Row data-aos="fade-up">
+            <Row>
               <Column>
                 <TextWrapper>
                   <LogoImg src={img} alt="home.png" />
@@ -69,7 +70,7 @@ const Hero = ({ lineHeading, heading, img }) => {
                   </div>
                 </TextWrapper>
               </Column>
-              <Column>
+              <Column2>
                 <animated.div
                   class="Competition1"
                   style={{ transform: props.xy.interpolate(trans1) }}
@@ -94,7 +95,7 @@ const Hero = ({ lineHeading, heading, img }) => {
                   class="Competition6"
                   style={{ transform: props.xy.interpolate(trans6) }}
                 />
-              </Column>
+              </Column2>
             </Row>
           </ContentWrap>
         </Container>

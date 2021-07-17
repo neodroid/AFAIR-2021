@@ -4,7 +4,7 @@ import {
   HeroSection,
   Row,
   Column,
-  TextWrapper,
+  Column2,
   Line,
   Heading,
   Paragraph,
@@ -42,7 +42,7 @@ const EventUpdates = ({ lineHeading, heading, description, img }) => {
         <Container>
           <ContentWrap>
             <Row>
-              <Column>
+              <Column2>
                 <animated.div
                   class="card12"
                   style={{ transform: props.xy.interpolate(trans1) }}
@@ -67,11 +67,7 @@ const EventUpdates = ({ lineHeading, heading, description, img }) => {
                   class="card54"
                   style={{ transform: props.xy.interpolate(trans6) }}
                 />
-                {/* <animated.div
-              class="card5"
-              style={{ transform: props.xy.interpolate(trans5) }}
-            /> */}
-              </Column>
+              </Column2>
               <Column>
                 {/* <TextWrapper> */}
                 <LogoImg src={img} alt="home.png" />
@@ -83,13 +79,8 @@ const EventUpdates = ({ lineHeading, heading, description, img }) => {
                 </div>
                 {/* </TextWrapper> */}
               </Column>
-              <Column>
-                {/* <ImageWrapper>
-                <Img src={img} alt="home.png" />
-              </ImageWrapper> */}
-              </Column>
+              <Column></Column>
             </Row>
-            {/* <HomeImg src={img1} alt="home.png" /> */}
           </ContentWrap>
         </Container>
       </HeroSection>

@@ -59,9 +59,9 @@ const NavbarBawah = () => {
           <Logo to="/" onClick={closeMenu}>
             {/* <LinkScroll to="/" smooth onClick={closeMenu}></LinkScroll> */}
           </Logo>
-          <MobileIcon onClick={handleToggle}>
+          {/* <MobileIcon onClick={handleToggle}>
             {toggle ? <FaTimes /> : <FaBars />}
-          </MobileIcon>
+          </MobileIcon> */}
           <NavMenu onClick={handleToggle} toggle={toggle}>
             <NavItem>
               <LinkScroll to="/brief" smooth onClick={closeMenu}>

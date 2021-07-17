@@ -37,7 +37,8 @@ export const TextWrapper = styled.div`
   padding-bottom: 60px;
 
   @media screen and (max-width: 768px) {
-    padding-bottom: 65px;
+    // padding-bottom: 65px;
+    width: 100%;
   }
 `;
 
@@ -52,6 +53,9 @@ export const Line = styled.div`
   letter-spacing: -0.015em;
 
   color: #2f3a56;
+  @media screen and (max-width: 768px) {
+    font-size: 50px;
+  }
 `;
 
 export const Heading = styled.p`
@@ -99,6 +103,10 @@ export const ImageWrapper = styled.div`
   display: flex;
   justify-content: flex-end;
   min-height: auto;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export const Img = styled.img`
@@ -141,16 +149,14 @@ export const DivLine = styled.div`
 `;
 
 export const HomeImg = styled.img`
-  
   display: inline-block;
-  height: 340px;   
+  height: 340px;
   margin-left: 150px;
 
   align-self: flex-start;
 
-
-  // @media screen and (max-width: 480px) {
-    // max-width: 450px;
+  @media screen and (max-width: 768px) {
+    height: 200px;
   }
 `;
 

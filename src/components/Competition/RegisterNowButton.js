@@ -7,7 +7,7 @@ import {
   RekWrap,
   Name,
   Num,
-  ContentWrap,
+  ButtonWrap1,
   HomeImg,
   Img,
   LogoImg,
@@ -42,7 +42,9 @@ function RegisterButton({ lineHeading, heading, description, img }) {
             </RekWrap>
           </PaymentWrap>
           <ButtonWrap>
-            <Button1>REGISTER NOW</Button1>
+            <ButtonWrap1 target="_blank" to="register" isExternal>
+              <Button1>REGISTER NOW</Button1>
+            </ButtonWrap1>
           </ButtonWrap>
         </Container>
       </RegisterSection>

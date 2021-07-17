@@ -8,6 +8,9 @@ export const HeroSection = styled(Link)`
   // padding: 60px 0;
   background: #2f3a56;
   height: 850px;
+  @media screen and (max-width: 768px) {
+    height: 700px;
+  }
 `;
 
 export const Row = styled.div`
@@ -31,10 +34,27 @@ export const Column = styled.div`
   // background: #000;
 
   @media screen and (max-width: 768px) {
-    max-width: 100%;
+    width: 100%;
     flex-basis: 100%;
-    display: flex;
+    // display: flex;
     justify-content: center;
+
+    // background: #000;
+  }
+`;
+
+export const Column2 = styled.div`
+  margin-bottom: 15px;
+  padding-right: 15px;
+  padding-left: 15px;
+  flex: 1;
+  max-width: 50%;
+  flex-basis: 50%;
+
+  // background: #000;
+
+  @media screen and (max-width: 768px) {
+    display: none;
   }
 `;
 
@@ -69,7 +89,11 @@ export const Heading = styled.h1`
   line-height: 94px;
   letter-spacing: -0.015em;
 
-  color: #f7f2ec; ;
+  color: #f7f2ec;
+
+  @media screen and (max-width: 690px) {
+    width: 100%;
+  }
 `;
 
 export const Paragraph = styled.p`
