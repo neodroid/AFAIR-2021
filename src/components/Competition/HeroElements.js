@@ -202,6 +202,9 @@ export const ButtonWrap1 = styled(Link)`
     margin-bottom: 20px;
   }
 `;
+export const ButtonWrap2 = styled.a`
+  text-decoration: none;
+`;
 
 export const Button2 = styled.button`
   border-radius: 20px;

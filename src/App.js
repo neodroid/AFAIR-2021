@@ -32,6 +32,11 @@ function App() {
             to="https://docs.google.com/forms/d/e/1FAIpQLSexJ21YDhMEDf1H9buh44lBqkof5CU759BIkhSYVevpe31TCw/viewform"
             exact
           />
+          <ExternalRedirect
+            path="/tor"
+            to="https://drive.google.com/u/0/uc?id=12LfyaSDO3rShEC6sqg_8bo97_3rAeOLo&export=download"
+            exact
+          />
         </Switch>
         {/* <Footer /> */}
       </ToTop>

@@ -15,6 +15,7 @@ import {
   Button2,
   ButtonWrap,
   Desc1,
+  ButtonWrap2,
 } from "./HeroElements";
 
 import { Container } from "../../GlobalStyles";
@@ -69,7 +70,13 @@ const Hero = ({ lineHeading, heading, img }) => {
                       <ButtonWrap1 target="_blank" to="register" isExternal>
                         <Button1>REGISTER NOW!</Button1>
                       </ButtonWrap1>
-                      <Button2>TOR</Button2>
+                      <ButtonWrap2
+                        target="_blank"
+                        href="https://drive.google.com/u/0/uc?id=12LfyaSDO3rShEC6sqg_8bo97_3rAeOLo&export=download"
+                        isExternal
+                      >
+                        <Button2>TOR</Button2>
+                      </ButtonWrap2>
                     </ButtonWrap>
                   </div>
                 </TextWrapper>
