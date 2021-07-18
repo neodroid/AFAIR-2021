@@ -103,7 +103,7 @@ const FAQ = () => {
                 allowed?
               </FAQQuestion>
               <FAQText>
-                TNo, there is only a maximum floor plan area of 30m2, but
+                No, there is only a maximum floor plan area of 30m2, but
                 participants are welcomed to integrate the design with the area
                 outside the site.
               </FAQText>

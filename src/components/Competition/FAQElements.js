@@ -132,6 +132,7 @@ export const ContactsWrap = styled.div`
 `;
 export const ContactChild = styled.div`
   margin-right: 20px;
+  margin-bottom: 10px;
 `;
 export const Name = styled.div`
   font-family: Roboto;
