@@ -72,7 +72,7 @@ const Hero = ({ lineHeading, heading, img }) => {
                       </ButtonWrap1>
                       <ButtonWrap2
                         target="_blank"
-                        href="https://drive.google.com/u/0/uc?id=12LfyaSDO3rShEC6sqg_8bo97_3rAeOLo&export=download"
+                        href="https://drive.google.com/u/0/uc?id=1ASeU20Rzf6PnSGc4xblu9q0uhsVxh7zh&export=download"
                         isExternal
                       >
                         <Button2>TOR</Button2>
