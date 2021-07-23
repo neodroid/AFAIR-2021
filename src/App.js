@@ -37,6 +37,11 @@ function App() {
             to="https://drive.google.com/u/0/uc?id=12LfyaSDO3rShEC6sqg_8bo97_3rAeOLo&export=download"
             exact
           />
+          <ExternalRedirect
+            path="/ZoomATalkEps1"
+            to="https://us02web.zoom.us/j/82333484537?pwd=cEE3blI4ckZHRnZlV1BOV3ZzZFl6dz09"
+            exact
+          />
         </Switch>
         {/* <Footer /> */}
       </ToTop>
