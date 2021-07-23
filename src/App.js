@@ -42,6 +42,11 @@ function App() {
             to="https://us02web.zoom.us/j/82333484537?pwd=cEE3blI4ckZHRnZlV1BOV3ZzZFl6dz09"
             exact
           />
+          <ExternalRedirect
+            path="/ZoomATalkEps1Stream"
+            to="https://youtu.be/evD7MhEgMwI"
+            exact
+          />
         </Switch>
         {/* <Footer /> */}
       </ToTop>
