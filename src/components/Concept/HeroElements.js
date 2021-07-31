@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const HeroSection = styled.div`
   color: #fff;
@@ -176,5 +177,52 @@ export const RightImg = styled.img`
 
   // @media screen and (max-width: 480px) {
     // max-width: 450px;
+  }
+`;
+
+export const Button1 = styled.button`
+  text-decoration: none;
+
+  padding: ${({ size }) => (size ? "12px 64px" : "10px 20px")};
+  color: #fff;
+  outline: none;
+  border: none;
+  cursor: pointer;
+
+  min-width: 302px;
+  height: 46px;
+  left: 47px;
+  top: 615px;
+  margin-right: 20px;
+  background: #fe7235;
+  border-radius: 9px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  /* identical to box height */
+
+  letter-spacing: -0.015em;
+  text-align: center;
+  text-justify: center;
+
+  &:hover {
+    transition: all 0.2s ease-out;
+    background: #2f3a56;
+  }
+
+  @media screen and (max-width: 480px) {
+    width: 300px;
+  }
+`;
+export const ButtonWrap1 = styled(Link)`
+  justify-self: flex-start;
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  @media screen and (max-width: 480px) {
+    margin-bottom: 20px;
   }
 `;

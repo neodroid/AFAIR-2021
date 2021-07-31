@@ -12,6 +12,8 @@ import {
   DivLine,
   LogoImg,
   RightImg,
+  ButtonWrap1,
+  Button1,
 } from "./HeroElements";
 
 import { Container } from "../../GlobalStyles";
@@ -87,6 +89,14 @@ const HeroConcept = ({ img }) => {
             <Heading>A-TALK </Heading>
             <Line>WEBINAR SERIES</Line>
           </DivLine>
+          <ButtonWrap1
+            data-aos="fade-up"
+            target="_blank"
+            to="register-A-talk"
+            isExternal
+          >
+            <Button1>REGISTER NOW!</Button1>
+          </ButtonWrap1>
         </Container>
       </HeroSection>
     </>
