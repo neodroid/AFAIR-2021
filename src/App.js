@@ -48,6 +48,11 @@ function App() {
             exact
           />
           <ExternalRedirect
+            path="/shortcuts"
+            to="https://linktr.ee/afairui"
+            exact
+          />
+          <ExternalRedirect
             path="/register-A-talk"
             to="https://docs.google.com/forms/d/e/1FAIpQLSev5zDz9QZusxjHMyui3yaO39XXnpG6fsr3EUizhRfoaeBqbQ/viewform?usp=sf_link"
             exact
