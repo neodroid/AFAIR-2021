@@ -57,6 +57,11 @@ function App() {
             to="https://docs.google.com/forms/d/e/1FAIpQLSev5zDz9QZusxjHMyui3yaO39XXnpG6fsr3EUizhRfoaeBqbQ/viewform?usp=sf_link"
             exact
           />
+          <ExternalRedirect
+            path="/ZoomATalkEps2"
+            to="https://us02web.zoom.us/j/81330081167?pwd=dDA4RFlubUNIbjQyYVVDRnZhTDUzZz09"
+            exact
+          />
         </Switch>
         {/* <Footer /> */}
       </ToTop>
