@@ -74,7 +74,7 @@ function App() {
           />
           <ExternalRedirect
             path="/ZoomATalkEps3Stream"
-            to="https://youtu.be/mzkBqaCOuUI"
+            to="https://youtu.be/qIwdKnCAXe0"
             exact
           />
         </Switch>
